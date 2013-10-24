@@ -3109,6 +3109,7 @@ static NSString *getTypeStringFromNode(id node)
         
         result = [value evalWithArguments:cdr context:context];
         
+        
         if (NU_LIST_EVAL_END_ENABLED()) {
             if ((self->line != -1) && (self->file != -1)) {
                 NU_LIST_EVAL_END(nu_parsedFilename(self->file), self->line);
@@ -5072,6 +5073,11 @@ static id collect_arguments(struct nu_handler_description *description, va_list 
             //NSLog(@"argument is %lf", x);
             [cursor setCar:get_nu_value_from_objc_value(&x, type)];
         }
+        else if (!strcmp(type, "^q")) {
+            void *x = va_arg(ap, void *);
+            //NSLog(@"argument is %lf", x);
+            [cursor setCar:get_nu_value_from_objc_value(&x, type)];
+        }
 #if TARGET_OS_IPHONE
         else if (!strcmp(type, "{CGRect={CGPoint=ff}{CGSize=ff}}")
                  || (!strcmp(type, "{CGRect=\"origin\"{CGPoint=\"x\"f\"y\"f}\"size\"{CGSize=\"width\"f\"height\"f}}"))) {
@@ -6279,7 +6285,8 @@ static void nu_markEndOfObjCTypeString(char *type, size_t len)
         NuSelectorCache *selectorCache = [[NuSelectorCache sharedSelectorCache] lookupSymbol:nextSymbol];
         cursor = [cursor cdr];
         while (cursor && (cursor != Nu__null)) {
-            [args addObject:[cursor car]];
+            // C H A N G E D ! ! !
+            [args addObject:cursor];
             cursor = [cursor cdr];
             if (cursor && (cursor != Nu__null)) {
                 id nextSymbol = [cursor car];
@@ -6323,7 +6330,8 @@ static void nu_markEndOfObjCTypeString(char *type, size_t len)
         NSUInteger i;
         NSUInteger imax = [args count];
         for (i = 0; i < imax; i++) {
-            [argValues addObject:[[args objectAtIndex:i] evalWithContext:context]];
+            // C H A N G E D ! ! !
+            [argValues addObject:[[[args objectAtIndex:i] car] evalWithContext:context]];
         }
         // Then call the method.
         result = nu_calling_objc_method_handler(target, m, argValues);

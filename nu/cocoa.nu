@@ -18,13 +18,13 @@
 ;;   limitations under the License.
 
 (macro bridge (kind name signature)
-     (case kind
-           ('constant
-                     `(global ,name (NuBridgedConstant constantWithName:(',name stringValue) signature:,signature)))
-           ('function
-                     `(global ,name (NuBridgedFunction functionWithName:(',name stringValue) signature:,signature)))
-           (else
-                `(NSLog "invalid argument to bridge: '#{,kind}'"))))
+       (case kind
+             ('constant
+                 `(global ,name (NuBridgedConstant constantWithName:(',name stringValue) signature:,signature)))
+             ('function
+                 `(global ,name (NuBridgedFunction functionWithName:(',name stringValue) signature:,signature)))
+             (else
+                 `(NSLog "invalid argument to bridge: '#{,kind}'"))))
 
 (bridge function NSLog "v@")
 (bridge function NSApplicationMain "ii^*")

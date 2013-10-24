@@ -1,0 +1,1445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		122CE88E180AA078005B69F1 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122CE88D180AA078005B69F1 /* Document.xib */; };
+		12E9B7BF1811CAD800067109 /* syntax coloring.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7B71811CAD800067109 /* syntax coloring.nu */; };
+		12E9B7C01811CAD800067109 /* tutorial 1.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7B81811CAD800067109 /* tutorial 1.nu */; };
+		12E9B7C11811CAD800067109 /* error demo.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7B91811CAD800067109 /* error demo.nu */; };
+		12E9B7C21811CAD800067109 /* error demo class.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7BA1811CAD800067109 /* error demo class.nu */; };
+		12E9B7C31811CAD800067109 /* web view demo.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7BB1811CAD800067109 /* web view demo.nu */; };
+		12E9B7C41811CAD800067109 /* sprite kit demo.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7BC1811CAD800067109 /* sprite kit demo.nu */; };
+		12E9B7C51811CAD800067109 /* tutorial 3.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7BD1811CAD800067109 /* tutorial 3.nu */; };
+		12E9B7C61811CAD800067109 /* tutorial 2.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7BE1811CAD800067109 /* tutorial 2.nu */; };
+		12E9B7C818127A6F00067109 /* source change demo.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7C718127A6F00067109 /* source change demo.nu */; };
+		12E9B7CA1812939000067109 /* conversions.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B7C91812939000067109 /* conversions.nu */; };
+		12F69742180C94E300AE9F55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F69740180C94E300AE9F55 /* MainMenu.xib */; };
+		12F69744180DA99500AE9F55 /* package_editors.icns in Resources */ = {isa = PBXBuildFile; fileRef = 12F69743180DA99500AE9F55 /* package_editors.icns */; };
+		12F69746180DA9A400AE9F55 /* accessories_text_editor.icns in Resources */ = {isa = PBXBuildFile; fileRef = 12F69745180DA9A400AE9F55 /* accessories_text_editor.icns */; };
+		12FA6B04180C760100E93F6A /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AED180C760100E93F6A /* 005.png */; };
+		12FA6B05180C760100E93F6A /* 008.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AEE180C760100E93F6A /* 008.png */; };
+		12FA6B06180C760100E93F6A /* 027.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AEF180C760100E93F6A /* 027.png */; };
+		12FA6B07180C760100E93F6A /* 048.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF0180C760100E93F6A /* 048.png */; };
+		12FA6B08180C760100E93F6A /* 054.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF1180C760100E93F6A /* 054.png */; };
+		12FA6B09180C760100E93F6A /* 059.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF2180C760100E93F6A /* 059.png */; };
+		12FA6B0A180C760100E93F6A /* 063.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF3180C760100E93F6A /* 063.png */; };
+		12FA6B0B180C760100E93F6A /* 077.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF4180C760100E93F6A /* 077.png */; };
+		12FA6B0C180C760100E93F6A /* 080.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF5180C760100E93F6A /* 080.png */; };
+		12FA6B0D180C760100E93F6A /* 103.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF6180C760100E93F6A /* 103.png */; };
+		12FA6B0E180C760100E93F6A /* 143.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF7180C760100E93F6A /* 143.png */; };
+		12FA6B0F180C760100E93F6A /* 158.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF8180C760100E93F6A /* 158.png */; };
+		12FA6B10180C760100E93F6A /* 178.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AF9180C760100E93F6A /* 178.png */; };
+		12FA6B11180C760100E93F6A /* 193.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AFA180C760100E93F6A /* 193.png */; };
+		12FA6B12180C760100E93F6A /* 206.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AFB180C760100E93F6A /* 206.png */; };
+		12FA6B13180C760100E93F6A /* 212.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AFC180C760100E93F6A /* 212.png */; };
+		12FA6B14180C760100E93F6A /* 354.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AFD180C760100E93F6A /* 354.png */; };
+		12FA6B15180C760100E93F6A /* 355.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AFE180C760100E93F6A /* 355.png */; };
+		12FA6B16180C760100E93F6A /* 356.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6AFF180C760100E93F6A /* 356.png */; };
+		12FA6B17180C760100E93F6A /* 358.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B00180C760100E93F6A /* 358.png */; };
+		12FA6B18180C760100E93F6A /* 369.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B01180C760100E93F6A /* 369.png */; };
+		12FA6B19180C760100E93F6A /* arrow-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B02180C760100E93F6A /* arrow-back.png */; };
+		12FA6B1A180C760100E93F6A /* arrow-forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B03180C760100E93F6A /* arrow-forward.png */; };
+		12FA6B1C180C769600E93F6A /* 071.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B1B180C769600E93F6A /* 071.png */; };
+		12FA6B1E180C781B00E93F6A /* 060.png in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B1D180C781B00E93F6A /* 060.png */; };
+		12FA6B20180C7DC100E93F6A /* toolbar.nu in Resources */ = {isa = PBXBuildFile; fileRef = 12FA6B1F180C7DC100E93F6A /* toolbar.nu */; };
+		22B3B3F613B033EE00B3AB31 /* old beautify.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3E513B033EE00B3AB31 /* old beautify.nu */; };
+		22B3B3F813B033EE00B3AB31 /* bridgesupport.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3E613B033EE00B3AB31 /* bridgesupport.nu */; };
+		22B3B3FA13B033EE00B3AB31 /* cblocks.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3E713B033EE00B3AB31 /* cblocks.nu */; };
+		22B3B3FC13B033EE00B3AB31 /* cocoa.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3E813B033EE00B3AB31 /* cocoa.nu */; };
+		22B3B3FE13B033EE00B3AB31 /* console.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3E913B033EE00B3AB31 /* console.nu */; };
+		22B3B40013B033EE00B3AB31 /* coredata.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3EA13B033EE00B3AB31 /* coredata.nu */; };
+		22B3B40213B033EE00B3AB31 /* doc.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3EB13B033EE00B3AB31 /* doc.nu */; };
+		22B3B40413B033EE00B3AB31 /* fscript.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3EC13B033EE00B3AB31 /* fscript.nu */; };
+		22B3B40613B033EE00B3AB31 /* generate.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3ED13B033EE00B3AB31 /* generate.nu */; };
+		22B3B40813B033EE00B3AB31 /* help.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3EE13B033EE00B3AB31 /* help.nu */; };
+		22B3B40A13B033EE00B3AB31 /* match.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3EF13B033EE00B3AB31 /* match.nu */; };
+		22B3B40C13B033EE00B3AB31 /* math.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F013B033EE00B3AB31 /* math.nu */; };
+		22B3B40E13B033EE00B3AB31 /* menu.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F113B033EE00B3AB31 /* menu.nu */; };
+		22B3B41013B033EE00B3AB31 /* nibtools.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F213B033EE00B3AB31 /* nibtools.nu */; };
+		22B3B41213B033EE00B3AB31 /* nu.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F313B033EE00B3AB31 /* nu.nu */; };
+		22B3B41413B033EE00B3AB31 /* template.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F413B033EE00B3AB31 /* template.nu */; };
+		22B3B41613B033EE00B3AB31 /* test.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F513B033EE00B3AB31 /* test.nu */; };
+		22B3B47313B0359300B3AB31 /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3B41D13B0359300B3AB31 /* Nu.m */; };
+		22B3B50713B038D000B3AB31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3B50613B038D000B3AB31 /* Foundation.framework */; };
+		420B526717F2EA8A00768EEF /* GCUndoManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */; };
+		423601E917919006000E9F49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C1A93B179150C000BEBF6C /* Cocoa.framework */; };
+		423601EF17919006000E9F49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 423601ED17919006000E9F49 /* InfoPlist.strings */; };
+		423601F117919006000E9F49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423601F017919006000E9F49 /* main.m */; };
+		423601F517919006000E9F49 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 423601F317919006000E9F49 /* Credits.rtf */; };
+		4236020017919006000E9F49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423601FF17919006000E9F49 /* Images.xcassets */; };
+		423602221791913C000E9F49 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 423602191791913C000E9F49 /* Document.m */; };
+		423602231791913C000E9F49 /* editor.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4236021A1791913C000E9F49 /* editor.nu */; };
+		423602241791913C000E9F49 /* nubile.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4236021B1791913C000E9F49 /* nubile.nu */; };
+		423602251791913C000E9F49 /* Editor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4236021D1791913C000E9F49 /* Editor.m */; };
+		423602261791913C000E9F49 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = 4236021F1791913C000E9F49 /* App.m */; };
+		423602271791913C000E9F49 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 423602211791913C000E9F49 /* Parser.m */; };
+		4236022D17931E41000E9F49 /* completion.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4236022C17931E41000E9F49 /* completion.nu */; };
+		4238F6ED181475DF00CB469F /* window.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4238F6EC181475DF00CB469F /* window.nu */; };
+		4242ACEC17CC9ED80029AD1A /* linesplitting.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4242ACEB17CC9ED80029AD1A /* linesplitting.nu */; };
+		4243274817F5AA78008D5F9D /* nu.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4243274717F5AA78008D5F9D /* nu.icns */; };
+		4243274A17F5F5AB008D5F9D /* playground.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4243274917F5F5AB008D5F9D /* playground.nu */; };
+		425318F4179427CE00F183E1 /* utilities.nu in Resources */ = {isa = PBXBuildFile; fileRef = 425318F3179427CE00F183E1 /* utilities.nu */; };
+		425396B517E62BE300628460 /* test_markup.nu in Resources */ = {isa = PBXBuildFile; fileRef = 425396B417E62BE300628460 /* test_markup.nu */; };
+		427B09A617E867FE005E218D /* focus.nu in Resources */ = {isa = PBXBuildFile; fileRef = 427B09A517E867FE005E218D /* focus.nu */; };
+		427B09A817E86830005E218D /* color.nu in Resources */ = {isa = PBXBuildFile; fileRef = 427B09A717E86830005E218D /* color.nu */; };
+		4298385D17F43BAF00D735C8 /* expressions.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4298385C17F43BAF00D735C8 /* expressions.nu */; };
+		4298386717F592BB00D735C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298386617F592BB00D735C8 /* main.m */; };
+		4298387317F592F600D735C8 /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Nu.framework */; };
+		4298387417F593CB00D735C8 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 423602211791913C000E9F49 /* Parser.m */; };
+		4298387517F5941100D735C8 /* Debugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB5DC317BFEBB900CD274C /* Debugger.m */; };
+		42A0984F17F2E8010072963B /* Nu.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Nu.framework */; };
+		42C1A9B01791630300BEBF6C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C1A93B179150C000BEBF6C /* Cocoa.framework */; };
+		42C1A9B61791630300BEBF6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42C1A9B41791630300BEBF6C /* InfoPlist.strings */; };
+		42C1A9D51791637E00BEBF6C /* GCUndoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C1A9D31791637E00BEBF6C /* GCUndoManager.h */; };
+		42C1A9D61791637E00BEBF6C /* GCUndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1A9D41791637E00BEBF6C /* GCUndoManager.m */; };
+		42C5670C17FF3831008B0091 /* defaults.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42C5670B17FF3831008B0091 /* defaults.nu */; };
+		42CB5DC417BFEBB900CD274C /* Debugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB5DC317BFEBB900CD274C /* Debugger.m */; };
+		42CCCB5017FC6F590097F771 /* document.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CCCB4F17FC6F590097F771 /* document.nu */; };
+		42CCCB5217FD8C350097F771 /* beautifier.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CCCB5117FD8C350097F771 /* beautifier.nu */; };
+		42CEE82B17EF495F00CC4F95 /* GCUndoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */; };
+		42CEE82C17EF496400CC4F95 /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Nu.framework */; };
+		42CF88EF17FDE41C0061AF28 /* panel.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CF88EE17FDE41C0061AF28 /* panel.nu */; };
+		42CF88F117FE05310061AF28 /* guide.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CF88F017FE05310061AF28 /* guide.nu */; };
+		42F47A6B17FAF8F700CD892A /* dragging.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42F47A6A17FAF8F700CD892A /* dragging.nu */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4298386F17F592E400D735C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Nu;
+		};
+		4298387117F592EC00D735C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 423601E717919006000E9F49;
+			remoteInfo = Nutor;
+		};
+		42CEE81E17EF460000CC4F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42C1A9AE1791630300BEBF6C;
+			remoteInfo = GCUndoManager;
+		};
+		42CEE82217EF460E00CC4F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Nu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		420BA35917F2E7CF00419F15 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				420B526717F2EA8A00768EEF /* GCUndoManager.framework in CopyFiles */,
+				42A0984F17F2E8010072963B /* Nu.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4243274317F5A643008D5F9D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		122CE88D180AA078005B69F1 /* Document.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Document.xib; sourceTree = "<group>"; };
+		12E9B7B71811CAD800067109 /* syntax coloring.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "syntax coloring.nu"; path = "Examples/syntax coloring.nu"; sourceTree = "<group>"; };
+		12E9B7B81811CAD800067109 /* tutorial 1.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "tutorial 1.nu"; path = "Examples/tutorial 1.nu"; sourceTree = "<group>"; };
+		12E9B7B91811CAD800067109 /* error demo.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "error demo.nu"; path = "Examples/error demo.nu"; sourceTree = "<group>"; };
+		12E9B7BA1811CAD800067109 /* error demo class.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "error demo class.nu"; path = "Examples/error demo class.nu"; sourceTree = "<group>"; };
+		12E9B7BB1811CAD800067109 /* web view demo.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "web view demo.nu"; path = "Examples/web view demo.nu"; sourceTree = "<group>"; };
+		12E9B7BC1811CAD800067109 /* sprite kit demo.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "sprite kit demo.nu"; path = "Examples/sprite kit demo.nu"; sourceTree = "<group>"; };
+		12E9B7BD1811CAD800067109 /* tutorial 3.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "tutorial 3.nu"; path = "Examples/tutorial 3.nu"; sourceTree = "<group>"; };
+		12E9B7BE1811CAD800067109 /* tutorial 2.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "tutorial 2.nu"; path = "Examples/tutorial 2.nu"; sourceTree = "<group>"; };
+		12E9B7C718127A6F00067109 /* source change demo.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "source change demo.nu"; path = "Examples/source change demo.nu"; sourceTree = "<group>"; };
+		12E9B7C91812939000067109 /* conversions.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = conversions.nu; path = Examples/conversions.nu; sourceTree = "<group>"; };
+		12F69741180C94E300AE9F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		12F69743180DA99500AE9F55 /* package_editors.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = package_editors.icns; path = ../package_editors.icns; sourceTree = "<group>"; };
+		12F69745180DA9A400AE9F55 /* accessories_text_editor.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = accessories_text_editor.icns; path = ../accessories_text_editor.icns; sourceTree = "<group>"; };
+		12FA6AED180C760100E93F6A /* 005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 005.png; sourceTree = "<group>"; };
+		12FA6AEE180C760100E93F6A /* 008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 008.png; sourceTree = "<group>"; };
+		12FA6AEF180C760100E93F6A /* 027.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 027.png; sourceTree = "<group>"; };
+		12FA6AF0180C760100E93F6A /* 048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 048.png; sourceTree = "<group>"; };
+		12FA6AF1180C760100E93F6A /* 054.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 054.png; sourceTree = "<group>"; };
+		12FA6AF2180C760100E93F6A /* 059.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 059.png; sourceTree = "<group>"; };
+		12FA6AF3180C760100E93F6A /* 063.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 063.png; sourceTree = "<group>"; };
+		12FA6AF4180C760100E93F6A /* 077.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 077.png; sourceTree = "<group>"; };
+		12FA6AF5180C760100E93F6A /* 080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 080.png; sourceTree = "<group>"; };
+		12FA6AF6180C760100E93F6A /* 103.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 103.png; sourceTree = "<group>"; };
+		12FA6AF7180C760100E93F6A /* 143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 143.png; sourceTree = "<group>"; };
+		12FA6AF8180C760100E93F6A /* 158.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 158.png; sourceTree = "<group>"; };
+		12FA6AF9180C760100E93F6A /* 178.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 178.png; sourceTree = "<group>"; };
+		12FA6AFA180C760100E93F6A /* 193.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 193.png; sourceTree = "<group>"; };
+		12FA6AFB180C760100E93F6A /* 206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 206.png; sourceTree = "<group>"; };
+		12FA6AFC180C760100E93F6A /* 212.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 212.png; sourceTree = "<group>"; };
+		12FA6AFD180C760100E93F6A /* 354.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 354.png; sourceTree = "<group>"; };
+		12FA6AFE180C760100E93F6A /* 355.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 355.png; sourceTree = "<group>"; };
+		12FA6AFF180C760100E93F6A /* 356.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 356.png; sourceTree = "<group>"; };
+		12FA6B00180C760100E93F6A /* 358.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 358.png; sourceTree = "<group>"; };
+		12FA6B01180C760100E93F6A /* 369.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 369.png; sourceTree = "<group>"; };
+		12FA6B02180C760100E93F6A /* arrow-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-back.png"; sourceTree = "<group>"; };
+		12FA6B03180C760100E93F6A /* arrow-forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-forward.png"; sourceTree = "<group>"; };
+		12FA6B1B180C769600E93F6A /* 071.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 071.png; sourceTree = "<group>"; };
+		12FA6B1D180C781B00E93F6A /* 060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 060.png; sourceTree = "<group>"; };
+		12FA6B1F180C7DC100E93F6A /* toolbar.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toolbar.nu; sourceTree = "<group>"; };
+		225F62BE13B04256002DD16B /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		225F62C413B04256002DD16B /* ffi.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = ffi.S; sourceTree = "<group>"; };
+		225F62CA13B04256002DD16B /* ffi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi.c; sourceTree = "<group>"; };
+		229FABE113C0129400CEFCF5 /* Nu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nu.h; sourceTree = "<group>"; };
+		22B3B38813B033D400B3AB31 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		22B3B38913B033D400B3AB31 /* test_array.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array.nu; sourceTree = "<group>"; };
+		22B3B38A13B033D400B3AB31 /* test_blockargs.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_blockargs.nu; sourceTree = "<group>"; };
+		22B3B38B13B033D400B3AB31 /* test_bridge.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_bridge.nu; sourceTree = "<group>"; };
+		22B3B38C13B033D400B3AB31 /* test_bridgesupport.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_bridgesupport.nu; sourceTree = "<group>"; };
+		22B3B38D13B033D400B3AB31 /* test_characters.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_characters.nu; sourceTree = "<group>"; };
+		22B3B38E13B033D400B3AB31 /* test_classes.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_classes.nu; sourceTree = "<group>"; };
+		22B3B38F13B033D400B3AB31 /* test_closures.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_closures.nu; sourceTree = "<group>"; };
+		22B3B39013B033D400B3AB31 /* test_comparison.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_comparison.nu; sourceTree = "<group>"; };
+		22B3B39113B033D400B3AB31 /* test_control.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_control.nu; sourceTree = "<group>"; };
+		22B3B39213B033D400B3AB31 /* test_dictionary.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_dictionary.nu; sourceTree = "<group>"; };
+		22B3B39313B033D400B3AB31 /* test_enumerable.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_enumerable.nu; sourceTree = "<group>"; };
+		22B3B39413B033D400B3AB31 /* test_errors.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_errors.nu; sourceTree = "<group>"; };
+		22B3B39513B033D400B3AB31 /* test_exceptions.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_exceptions.nu; sourceTree = "<group>"; };
+		22B3B39613B033D400B3AB31 /* test_interface.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_interface.nu; sourceTree = "<group>"; };
+		22B3B39713B033D400B3AB31 /* test_list.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_list.nu; sourceTree = "<group>"; };
+		22B3B39813B033D400B3AB31 /* test_list_enumerable.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_list_enumerable.nu; sourceTree = "<group>"; };
+		22B3B39913B033D400B3AB31 /* test_macros.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_macros.nu; sourceTree = "<group>"; };
+		22B3B39A13B033D400B3AB31 /* test_macrox.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_macrox.nu; sourceTree = "<group>"; };
+		22B3B39B13B033D400B3AB31 /* test_match.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_match.nu; sourceTree = "<group>"; };
+		22B3B39C13B033D400B3AB31 /* test_math.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_math.nu; sourceTree = "<group>"; };
+		22B3B39D13B033D400B3AB31 /* test_memory.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_memory.nu; sourceTree = "<group>"; };
+		22B3B39E13B033D400B3AB31 /* test_nu.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_nu.nu; sourceTree = "<group>"; };
+		22B3B3A013B033D400B3AB31 /* test_numbers.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_numbers.nu; sourceTree = "<group>"; };
+		22B3B3A113B033D400B3AB31 /* test_onlisp.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_onlisp.nu; sourceTree = "<group>"; };
+		22B3B3A213B033D400B3AB31 /* test_operators.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_operators.nu; sourceTree = "<group>"; };
+		22B3B3A313B033D400B3AB31 /* test_parser.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_parser.nu; sourceTree = "<group>"; };
+		22B3B3A413B033D400B3AB31 /* test_profiler.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_profiler.nu; sourceTree = "<group>"; };
+		22B3B3A513B033D400B3AB31 /* test_propertylists.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_propertylists.nu; sourceTree = "<group>"; };
+		22B3B3A613B033D400B3AB31 /* test_protocols.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_protocols.nu; sourceTree = "<group>"; };
+		22B3B3A713B033D400B3AB31 /* test_quasiquote.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_quasiquote.nu; sourceTree = "<group>"; };
+		22B3B3A813B033D400B3AB31 /* test_references.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_references.nu; sourceTree = "<group>"; };
+		22B3B3A913B033D400B3AB31 /* test_regex.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_regex.nu; sourceTree = "<group>"; };
+		22B3B3AA13B033D400B3AB31 /* test_return.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_return.nu; sourceTree = "<group>"; };
+		22B3B3AB13B033D400B3AB31 /* test_set.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_set.nu; sourceTree = "<group>"; };
+		22B3B3AC13B033D400B3AB31 /* test_strings.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_strings.nu; sourceTree = "<group>"; };
+		22B3B3AD13B033D400B3AB31 /* test_structs.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_structs.nu; sourceTree = "<group>"; };
+		22B3B3AE13B033D400B3AB31 /* test_swizzling.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_swizzling.nu; sourceTree = "<group>"; };
+		22B3B3AF13B033D400B3AB31 /* test_symbols.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_symbols.nu; sourceTree = "<group>"; };
+		22B3B3B013B033D400B3AB31 /* test_system.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_system.nu; sourceTree = "<group>"; };
+		22B3B3B113B033D400B3AB31 /* test_templates.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_templates.nu; sourceTree = "<group>"; };
+		22B3B3B213B033D400B3AB31 /* test_truth.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_truth.nu; sourceTree = "<group>"; };
+		22B3B3B313B033D400B3AB31 /* test_types.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_types.nu; sourceTree = "<group>"; };
+		22B3B3B413B033D400B3AB31 /* test_undo.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_undo.nu; sourceTree = "<group>"; };
+		22B3B3B513B033D400B3AB31 /* test_varargs.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_varargs.nu; sourceTree = "<group>"; };
+		22B3B3E513B033EE00B3AB31 /* old beautify.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "old beautify.nu"; sourceTree = "<group>"; };
+		22B3B3E613B033EE00B3AB31 /* bridgesupport.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bridgesupport.nu; sourceTree = "<group>"; };
+		22B3B3E713B033EE00B3AB31 /* cblocks.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cblocks.nu; sourceTree = "<group>"; };
+		22B3B3E813B033EE00B3AB31 /* cocoa.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocoa.nu; sourceTree = "<group>"; };
+		22B3B3E913B033EE00B3AB31 /* console.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = console.nu; sourceTree = "<group>"; };
+		22B3B3EA13B033EE00B3AB31 /* coredata.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coredata.nu; sourceTree = "<group>"; };
+		22B3B3EB13B033EE00B3AB31 /* doc.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doc.nu; sourceTree = "<group>"; };
+		22B3B3EC13B033EE00B3AB31 /* fscript.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fscript.nu; sourceTree = "<group>"; };
+		22B3B3ED13B033EE00B3AB31 /* generate.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = generate.nu; sourceTree = "<group>"; };
+		22B3B3EE13B033EE00B3AB31 /* help.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = help.nu; sourceTree = "<group>"; };
+		22B3B3EF13B033EE00B3AB31 /* match.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = match.nu; sourceTree = "<group>"; };
+		22B3B3F013B033EE00B3AB31 /* math.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = math.nu; sourceTree = "<group>"; };
+		22B3B3F113B033EE00B3AB31 /* menu.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menu.nu; sourceTree = "<group>"; };
+		22B3B3F213B033EE00B3AB31 /* nibtools.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nibtools.nu; sourceTree = "<group>"; };
+		22B3B3F313B033EE00B3AB31 /* nu.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nu.nu; sourceTree = "<group>"; };
+		22B3B3F413B033EE00B3AB31 /* template.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.nu; sourceTree = "<group>"; };
+		22B3B3F513B033EE00B3AB31 /* test.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.nu; sourceTree = "<group>"; };
+		22B3B41D13B0359300B3AB31 /* Nu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nu.m; sourceTree = "<group>"; };
+		22B3B50613B038D000B3AB31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22EE1B921406F494007AFC23 /* test_forwarding.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_forwarding.nu; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* Nu_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nu_Prefix.pch; sourceTree = "<group>"; };
+		423601E817919006000E9F49 /* Nutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		423601EC17919006000E9F49 /* editor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "editor-Info.plist"; sourceTree = "<group>"; };
+		423601EE17919006000E9F49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		423601F017919006000E9F49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		423601F217919006000E9F49 /* editor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "editor-Prefix.pch"; sourceTree = "<group>"; };
+		423601F417919006000E9F49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		423601FF17919006000E9F49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		423602181791913C000E9F49 /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		423602191791913C000E9F49 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		4236021A1791913C000E9F49 /* editor.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = editor.nu; sourceTree = "<group>"; };
+		4236021B1791913C000E9F49 /* nubile.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nubile.nu; sourceTree = "<group>"; };
+		4236021C1791913C000E9F49 /* Editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Editor.h; sourceTree = "<group>"; };
+		4236021D1791913C000E9F49 /* Editor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Editor.m; sourceTree = "<group>"; };
+		4236021E1791913C000E9F49 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		4236021F1791913C000E9F49 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
+		423602201791913C000E9F49 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		423602211791913C000E9F49 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		4236022C17931E41000E9F49 /* completion.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = completion.nu; sourceTree = "<group>"; };
+		4238F6EC181475DF00CB469F /* window.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = window.nu; sourceTree = "<group>"; };
+		4242ACEB17CC9ED80029AD1A /* linesplitting.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linesplitting.nu; sourceTree = "<group>"; };
+		4243274717F5AA78008D5F9D /* nu.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = nu.icns; path = ../nu.icns; sourceTree = "<group>"; };
+		4243274917F5F5AB008D5F9D /* playground.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = playground.nu; sourceTree = "<group>"; };
+		425318F3179427CE00F183E1 /* utilities.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utilities.nu; sourceTree = "<group>"; };
+		425396B417E62BE300628460 /* test_markup.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_markup.nu; sourceTree = "<group>"; };
+		427B09A517E867FE005E218D /* focus.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = focus.nu; sourceTree = "<group>"; };
+		427B09A717E86830005E218D /* color.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color.nu; sourceTree = "<group>"; };
+		4298385C17F43BAF00D735C8 /* expressions.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expressions.nu; sourceTree = "<group>"; };
+		4298386217F592BB00D735C8 /* nush */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = nush; sourceTree = BUILT_PRODUCTS_DIR; };
+		4298386317F592BB00D735C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4298386617F592BB00D735C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4298386917F592BB00D735C8 /* nush-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nush-Prefix.pch"; sourceTree = "<group>"; };
+		42C1A93B179150C000BEBF6C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		42C1A93E179150C000BEBF6C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42C1A93F179150C000BEBF6C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42C1A940179150C000BEBF6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42C1A95D179150C100BEBF6C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCUndoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C1A9B31791630300BEBF6C /* GCUndoManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCUndoManager-Info.plist"; sourceTree = "<group>"; };
+		42C1A9B51791630300BEBF6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42C1A9B71791630300BEBF6C /* GCUndoManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCUndoManager-Prefix.pch"; sourceTree = "<group>"; };
+		42C1A9D31791637E00BEBF6C /* GCUndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCUndoManager.h; sourceTree = "<group>"; };
+		42C1A9D41791637E00BEBF6C /* GCUndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCUndoManager.m; sourceTree = "<group>"; };
+		42C5670B17FF3831008B0091 /* defaults.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = defaults.nu; sourceTree = "<group>"; };
+		42CB5DC217BFEBB900CD274C /* Debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Debugger.h; path = editor/Debugger.h; sourceTree = SOURCE_ROOT; };
+		42CB5DC317BFEBB900CD274C /* Debugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Debugger.m; path = editor/Debugger.m; sourceTree = SOURCE_ROOT; };
+		42CCCB4F17FC6F590097F771 /* document.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = document.nu; sourceTree = "<group>"; };
+		42CCCB5117FD8C350097F771 /* beautifier.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = beautifier.nu; sourceTree = "<group>"; };
+		42CF88EE17FDE41C0061AF28 /* panel.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = panel.nu; sourceTree = "<group>"; };
+		42CF88F017FE05310061AF28 /* guide.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = guide.nu; sourceTree = "<group>"; };
+		42F47A6A17FAF8F700CD892A /* dragging.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dragging.nu; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* Nu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		423601E517919006000E9F49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CEE82C17EF496400CC4F95 /* Nu.framework in Frameworks */,
+				42CEE82B17EF495F00CC4F95 /* GCUndoManager.framework in Frameworks */,
+				423601E917919006000E9F49 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4298385F17F592BB00D735C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298387317F592F600D735C8 /* Nu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C1A9AB1791630300BEBF6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C1A9B01791630300BEBF6C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3B50713B038D000B3AB31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* Nu.framework */,
+				42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */,
+				423601E817919006000E9F49 /* Nutor.app */,
+				4298386217F592BB00D735C8 /* nush */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Nu */ = {
+			isa = PBXGroup;
+			children = (
+				423601EA17919006000E9F49 /* Nutor */,
+				22B3B41C13B0359300B3AB31 /* objc */,
+				22B3B3E413B033EE00B3AB31 /* nu */,
+				22B3B38713B033D400B3AB31 /* test */,
+				225F62B913B04256002DD16B /* libffi */,
+				22B3B50B13B03CF400B3AB31 /* Targets */,
+				42C1A9B11791630300BEBF6C /* GCUndoManager */,
+				4298386517F592BB00D735C8 /* nush */,
+				42C1A93A179150C000BEBF6C /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Nu;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Nu.framework */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* Nu_Prefix.pch */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				1058C7B0FEA5585E11CA2CBB /* Mac Frameworks */,
+			);
+			name = Nu.framework;
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Mac Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B3B50613B038D000B3AB31 /* Foundation.framework */,
+			);
+			name = "Mac Frameworks";
+			sourceTree = "<group>";
+		};
+		12F6974D180DBCFF00AE9F55 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				12E9B7B81811CAD800067109 /* tutorial 1.nu */,
+				12E9B7BE1811CAD800067109 /* tutorial 2.nu */,
+				12E9B7BD1811CAD800067109 /* tutorial 3.nu */,
+				12E9B7BB1811CAD800067109 /* web view demo.nu */,
+				12E9B7B71811CAD800067109 /* syntax coloring.nu */,
+				12E9B7B91811CAD800067109 /* error demo.nu */,
+				12E9B7BA1811CAD800067109 /* error demo class.nu */,
+				12E9B7C718127A6F00067109 /* source change demo.nu */,
+				12E9B7BC1811CAD800067109 /* sprite kit demo.nu */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		12FA6AEC180C760100E93F6A /* Toolbar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				12FA6B1D180C781B00E93F6A /* 060.png */,
+				12FA6B1B180C769600E93F6A /* 071.png */,
+				12FA6AED180C760100E93F6A /* 005.png */,
+				12FA6AEE180C760100E93F6A /* 008.png */,
+				12FA6AEF180C760100E93F6A /* 027.png */,
+				12FA6AF0180C760100E93F6A /* 048.png */,
+				12FA6AF1180C760100E93F6A /* 054.png */,
+				12FA6AF2180C760100E93F6A /* 059.png */,
+				12FA6AF3180C760100E93F6A /* 063.png */,
+				12FA6AF4180C760100E93F6A /* 077.png */,
+				12FA6AF5180C760100E93F6A /* 080.png */,
+				12FA6AF6180C760100E93F6A /* 103.png */,
+				12FA6AF7180C760100E93F6A /* 143.png */,
+				12FA6AF8180C760100E93F6A /* 158.png */,
+				12FA6AF9180C760100E93F6A /* 178.png */,
+				12FA6AFA180C760100E93F6A /* 193.png */,
+				12FA6AFB180C760100E93F6A /* 206.png */,
+				12FA6AFC180C760100E93F6A /* 212.png */,
+				12FA6AFD180C760100E93F6A /* 354.png */,
+				12FA6AFE180C760100E93F6A /* 355.png */,
+				12FA6AFF180C760100E93F6A /* 356.png */,
+				12FA6B00180C760100E93F6A /* 358.png */,
+				12FA6B01180C760100E93F6A /* 369.png */,
+				12FA6B02180C760100E93F6A /* arrow-back.png */,
+				12FA6B03180C760100E93F6A /* arrow-forward.png */,
+			);
+			path = "Toolbar Icons";
+			sourceTree = "<group>";
+		};
+		225F62B913B04256002DD16B /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				225F62BE13B04256002DD16B /* ffi.h */,
+				225F62C413B04256002DD16B /* ffi.S */,
+				225F62CA13B04256002DD16B /* ffi.c */,
+			);
+			name = libffi;
+			path = ../libffi;
+			sourceTree = "<group>";
+		};
+		22B3B38713B033D400B3AB31 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				22B3B38813B033D400B3AB31 /* test.html */,
+				22B3B38913B033D400B3AB31 /* test_array.nu */,
+				22B3B38A13B033D400B3AB31 /* test_blockargs.nu */,
+				22B3B38B13B033D400B3AB31 /* test_bridge.nu */,
+				22B3B38C13B033D400B3AB31 /* test_bridgesupport.nu */,
+				22B3B38D13B033D400B3AB31 /* test_characters.nu */,
+				22B3B38E13B033D400B3AB31 /* test_classes.nu */,
+				22B3B38F13B033D400B3AB31 /* test_closures.nu */,
+				22B3B39013B033D400B3AB31 /* test_comparison.nu */,
+				22B3B39113B033D400B3AB31 /* test_control.nu */,
+				22B3B39213B033D400B3AB31 /* test_dictionary.nu */,
+				22B3B39313B033D400B3AB31 /* test_enumerable.nu */,
+				22B3B39413B033D400B3AB31 /* test_errors.nu */,
+				22B3B39513B033D400B3AB31 /* test_exceptions.nu */,
+				22EE1B921406F494007AFC23 /* test_forwarding.nu */,
+				22B3B39613B033D400B3AB31 /* test_interface.nu */,
+				22B3B39713B033D400B3AB31 /* test_list.nu */,
+				22B3B39813B033D400B3AB31 /* test_list_enumerable.nu */,
+				22B3B39913B033D400B3AB31 /* test_macros.nu */,
+				22B3B39A13B033D400B3AB31 /* test_macrox.nu */,
+				22B3B39B13B033D400B3AB31 /* test_match.nu */,
+				22B3B39C13B033D400B3AB31 /* test_math.nu */,
+				22B3B39D13B033D400B3AB31 /* test_memory.nu */,
+				425396B417E62BE300628460 /* test_markup.nu */,
+				22B3B39E13B033D400B3AB31 /* test_nu.nu */,
+				22B3B3A013B033D400B3AB31 /* test_numbers.nu */,
+				22B3B3A113B033D400B3AB31 /* test_onlisp.nu */,
+				22B3B3A213B033D400B3AB31 /* test_operators.nu */,
+				22B3B3A313B033D400B3AB31 /* test_parser.nu */,
+				22B3B3A413B033D400B3AB31 /* test_profiler.nu */,
+				22B3B3A513B033D400B3AB31 /* test_propertylists.nu */,
+				22B3B3A613B033D400B3AB31 /* test_protocols.nu */,
+				22B3B3A713B033D400B3AB31 /* test_quasiquote.nu */,
+				22B3B3A813B033D400B3AB31 /* test_references.nu */,
+				22B3B3A913B033D400B3AB31 /* test_regex.nu */,
+				22B3B3AA13B033D400B3AB31 /* test_return.nu */,
+				22B3B3AB13B033D400B3AB31 /* test_set.nu */,
+				22B3B3AC13B033D400B3AB31 /* test_strings.nu */,
+				22B3B3AD13B033D400B3AB31 /* test_structs.nu */,
+				22B3B3AE13B033D400B3AB31 /* test_swizzling.nu */,
+				22B3B3AF13B033D400B3AB31 /* test_symbols.nu */,
+				22B3B3B013B033D400B3AB31 /* test_system.nu */,
+				22B3B3B113B033D400B3AB31 /* test_templates.nu */,
+				22B3B3B213B033D400B3AB31 /* test_truth.nu */,
+				22B3B3B313B033D400B3AB31 /* test_types.nu */,
+				22B3B3B413B033D400B3AB31 /* test_undo.nu */,
+				22B3B3B513B033D400B3AB31 /* test_varargs.nu */,
+			);
+			name = test;
+			path = ../test;
+			sourceTree = "<group>";
+		};
+		22B3B3E413B033EE00B3AB31 /* nu */ = {
+			isa = PBXGroup;
+			children = (
+				22B3B3E513B033EE00B3AB31 /* old beautify.nu */,
+				22B3B3E613B033EE00B3AB31 /* bridgesupport.nu */,
+				22B3B3E713B033EE00B3AB31 /* cblocks.nu */,
+				22B3B3E813B033EE00B3AB31 /* cocoa.nu */,
+				22B3B3E913B033EE00B3AB31 /* console.nu */,
+				22B3B3EA13B033EE00B3AB31 /* coredata.nu */,
+				22B3B3EB13B033EE00B3AB31 /* doc.nu */,
+				22B3B3EC13B033EE00B3AB31 /* fscript.nu */,
+				22B3B3ED13B033EE00B3AB31 /* generate.nu */,
+				22B3B3EE13B033EE00B3AB31 /* help.nu */,
+				22B3B3EF13B033EE00B3AB31 /* match.nu */,
+				22B3B3F013B033EE00B3AB31 /* math.nu */,
+				22B3B3F113B033EE00B3AB31 /* menu.nu */,
+				22B3B3F213B033EE00B3AB31 /* nibtools.nu */,
+				22B3B3F313B033EE00B3AB31 /* nu.nu */,
+				22B3B3F413B033EE00B3AB31 /* template.nu */,
+				22B3B3F513B033EE00B3AB31 /* test.nu */,
+			);
+			name = nu;
+			path = ../nu;
+			sourceTree = "<group>";
+		};
+		22B3B41C13B0359300B3AB31 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				229FABE113C0129400CEFCF5 /* Nu.h */,
+				22B3B41D13B0359300B3AB31 /* Nu.m */,
+			);
+			name = objc;
+			path = ../objc;
+			sourceTree = "<group>";
+		};
+		22B3B50B13B03CF400B3AB31 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69AFE84028FC02AAC07 /* Nu.framework */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		423601EA17919006000E9F49 /* Nutor */ = {
+			isa = PBXGroup;
+			children = (
+				4236021E1791913C000E9F49 /* App.h */,
+				4236021F1791913C000E9F49 /* App.m */,
+				423602181791913C000E9F49 /* Document.h */,
+				423602191791913C000E9F49 /* Document.m */,
+				4236021C1791913C000E9F49 /* Editor.h */,
+				4236021D1791913C000E9F49 /* Editor.m */,
+				423602201791913C000E9F49 /* Parser.h */,
+				423602211791913C000E9F49 /* Parser.m */,
+				42CB5DC217BFEBB900CD274C /* Debugger.h */,
+				42CB5DC317BFEBB900CD274C /* Debugger.m */,
+				122CE88D180AA078005B69F1 /* Document.xib */,
+				12F69740180C94E300AE9F55 /* MainMenu.xib */,
+				42C5670B17FF3831008B0091 /* defaults.nu */,
+				42CCCB4F17FC6F590097F771 /* document.nu */,
+				4236021A1791913C000E9F49 /* editor.nu */,
+				425318F3179427CE00F183E1 /* utilities.nu */,
+				427B09A517E867FE005E218D /* focus.nu */,
+				42CF88EE17FDE41C0061AF28 /* panel.nu */,
+				42CF88F017FE05310061AF28 /* guide.nu */,
+				4298385C17F43BAF00D735C8 /* expressions.nu */,
+				12FA6B1F180C7DC100E93F6A /* toolbar.nu */,
+				4238F6EC181475DF00CB469F /* window.nu */,
+				42CCCB5117FD8C350097F771 /* beautifier.nu */,
+				4236021B1791913C000E9F49 /* nubile.nu */,
+				4242ACEB17CC9ED80029AD1A /* linesplitting.nu */,
+				427B09A717E86830005E218D /* color.nu */,
+				42F47A6A17FAF8F700CD892A /* dragging.nu */,
+				12E9B7C91812939000067109 /* conversions.nu */,
+				4236022C17931E41000E9F49 /* completion.nu */,
+				4243274917F5F5AB008D5F9D /* playground.nu */,
+				12F6974D180DBCFF00AE9F55 /* Examples */,
+				423601FF17919006000E9F49 /* Images.xcassets */,
+				423601EB17919006000E9F49 /* Supporting Files */,
+			);
+			name = Nutor;
+			path = editor;
+			sourceTree = "<group>";
+		};
+		423601EB17919006000E9F49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12F69745180DA9A400AE9F55 /* accessories_text_editor.icns */,
+				12F69743180DA99500AE9F55 /* package_editors.icns */,
+				4243274717F5AA78008D5F9D /* nu.icns */,
+				12FA6AEC180C760100E93F6A /* Toolbar Icons */,
+				423601EC17919006000E9F49 /* editor-Info.plist */,
+				423601ED17919006000E9F49 /* InfoPlist.strings */,
+				423601F017919006000E9F49 /* main.m */,
+				423601F217919006000E9F49 /* editor-Prefix.pch */,
+				423601F317919006000E9F49 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4298386517F592BB00D735C8 /* nush */ = {
+			isa = PBXGroup;
+			children = (
+				4298386617F592BB00D735C8 /* main.m */,
+				4298386817F592BB00D735C8 /* Supporting Files */,
+			);
+			path = nush;
+			sourceTree = "<group>";
+		};
+		4298386817F592BB00D735C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4298386917F592BB00D735C8 /* nush-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42C1A93A179150C000BEBF6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C1A93B179150C000BEBF6C /* Cocoa.framework */,
+				42C1A95D179150C100BEBF6C /* XCTest.framework */,
+				4298386317F592BB00D735C8 /* Foundation.framework */,
+				42C1A93D179150C000BEBF6C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C1A93D179150C000BEBF6C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42C1A93E179150C000BEBF6C /* AppKit.framework */,
+				42C1A93F179150C000BEBF6C /* CoreData.framework */,
+				42C1A940179150C000BEBF6C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		42C1A9B11791630300BEBF6C /* GCUndoManager */ = {
+			isa = PBXGroup;
+			children = (
+				42C1A9D31791637E00BEBF6C /* GCUndoManager.h */,
+				42C1A9D41791637E00BEBF6C /* GCUndoManager.m */,
+				42C1A9B21791630300BEBF6C /* Supporting Files */,
+			);
+			path = GCUndoManager;
+			sourceTree = "<group>";
+		};
+		42C1A9B21791630300BEBF6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42C1A9B31791630300BEBF6C /* GCUndoManager-Info.plist */,
+				42C1A9B41791630300BEBF6C /* InfoPlist.strings */,
+				42C1A9B71791630300BEBF6C /* GCUndoManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42C1A9AC1791630300BEBF6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C1A9D51791637E00BEBF6C /* GCUndoManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		423601E717919006000E9F49 /* Nutor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4236021217919007000E9F49 /* Build configuration list for PBXNativeTarget "Nutor" */;
+			buildPhases = (
+				423601E417919006000E9F49 /* Sources */,
+				423601E517919006000E9F49 /* Frameworks */,
+				423601E617919006000E9F49 /* Resources */,
+				420BA35917F2E7CF00419F15 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42CEE82317EF460E00CC4F95 /* PBXTargetDependency */,
+				42CEE81F17EF460000CC4F95 /* PBXTargetDependency */,
+			);
+			name = Nutor;
+			productName = editor;
+			productReference = 423601E817919006000E9F49 /* Nutor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4298386117F592BB00D735C8 /* nush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4298386C17F592BB00D735C8 /* Build configuration list for PBXNativeTarget "nush" */;
+			buildPhases = (
+				4298385E17F592BB00D735C8 /* Sources */,
+				4298385F17F592BB00D735C8 /* Frameworks */,
+				4243274317F5A643008D5F9D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4298387217F592EC00D735C8 /* PBXTargetDependency */,
+				4298387017F592E400D735C8 /* PBXTargetDependency */,
+			);
+			name = nush;
+			productName = nush;
+			productReference = 4298386217F592BB00D735C8 /* nush */;
+			productType = "com.apple.product-type.tool";
+		};
+		42C1A9AE1791630300BEBF6C /* GCUndoManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C1A9CD1791630300BEBF6C /* Build configuration list for PBXNativeTarget "GCUndoManager" */;
+			buildPhases = (
+				42C1A9AA1791630300BEBF6C /* Sources */,
+				42C1A9AB1791630300BEBF6C /* Frameworks */,
+				42C1A9AC1791630300BEBF6C /* Headers */,
+				42C1A9AD1791630300BEBF6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCUndoManager;
+			productName = GCUndoManager;
+			productReference = 42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DC2EF4F0486A6940098B216 /* Nu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Nu" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nu;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = Nu;
+			productReference = 8DC2EF5B0486A6940098B216 /* Nu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Nutor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				Base,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Nu */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* Nu */,
+				42C1A9AE1791630300BEBF6C /* GCUndoManager */,
+				423601E717919006000E9F49 /* Nutor */,
+				4298386117F592BB00D735C8 /* nush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		423601E617919006000E9F49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9B7CA1812939000067109 /* conversions.nu in Resources */,
+				12F69746180DA9A400AE9F55 /* accessories_text_editor.icns in Resources */,
+				12FA6B09180C760100E93F6A /* 059.png in Resources */,
+				12F69742180C94E300AE9F55 /* MainMenu.xib in Resources */,
+				122CE88E180AA078005B69F1 /* Document.xib in Resources */,
+				4236022D17931E41000E9F49 /* completion.nu in Resources */,
+				12FA6B08180C760100E93F6A /* 054.png in Resources */,
+				12FA6B06180C760100E93F6A /* 027.png in Resources */,
+				4236020017919006000E9F49 /* Images.xcassets in Resources */,
+				42CCCB5217FD8C350097F771 /* beautifier.nu in Resources */,
+				427B09A817E86830005E218D /* color.nu in Resources */,
+				4243274817F5AA78008D5F9D /* nu.icns in Resources */,
+				12FA6B0B180C760100E93F6A /* 077.png in Resources */,
+				12FA6B19180C760100E93F6A /* arrow-back.png in Resources */,
+				12E9B7C61811CAD800067109 /* tutorial 2.nu in Resources */,
+				12E9B7C11811CAD800067109 /* error demo.nu in Resources */,
+				12FA6B04180C760100E93F6A /* 005.png in Resources */,
+				12FA6B05180C760100E93F6A /* 008.png in Resources */,
+				12FA6B17180C760100E93F6A /* 358.png in Resources */,
+				12FA6B1C180C769600E93F6A /* 071.png in Resources */,
+				12E9B7C01811CAD800067109 /* tutorial 1.nu in Resources */,
+				12E9B7C21811CAD800067109 /* error demo class.nu in Resources */,
+				423601EF17919006000E9F49 /* InfoPlist.strings in Resources */,
+				4242ACEC17CC9ED80029AD1A /* linesplitting.nu in Resources */,
+				12FA6B11180C760100E93F6A /* 193.png in Resources */,
+				12FA6B20180C7DC100E93F6A /* toolbar.nu in Resources */,
+				4298385D17F43BAF00D735C8 /* expressions.nu in Resources */,
+				423601F517919006000E9F49 /* Credits.rtf in Resources */,
+				12FA6B0D180C760100E93F6A /* 103.png in Resources */,
+				12FA6B0E180C760100E93F6A /* 143.png in Resources */,
+				12FA6B07180C760100E93F6A /* 048.png in Resources */,
+				12E9B7BF1811CAD800067109 /* syntax coloring.nu in Resources */,
+				12FA6B10180C760100E93F6A /* 178.png in Resources */,
+				42CF88F117FE05310061AF28 /* guide.nu in Resources */,
+				12E9B7C51811CAD800067109 /* tutorial 3.nu in Resources */,
+				423602241791913C000E9F49 /* nubile.nu in Resources */,
+				427B09A617E867FE005E218D /* focus.nu in Resources */,
+				4243274A17F5F5AB008D5F9D /* playground.nu in Resources */,
+				12FA6B14180C760100E93F6A /* 354.png in Resources */,
+				425318F4179427CE00F183E1 /* utilities.nu in Resources */,
+				42CCCB5017FC6F590097F771 /* document.nu in Resources */,
+				12FA6B18180C760100E93F6A /* 369.png in Resources */,
+				12FA6B0C180C760100E93F6A /* 080.png in Resources */,
+				42C5670C17FF3831008B0091 /* defaults.nu in Resources */,
+				12F69744180DA99500AE9F55 /* package_editors.icns in Resources */,
+				12E9B7C31811CAD800067109 /* web view demo.nu in Resources */,
+				4238F6ED181475DF00CB469F /* window.nu in Resources */,
+				12FA6B12180C760100E93F6A /* 206.png in Resources */,
+				12FA6B1E180C781B00E93F6A /* 060.png in Resources */,
+				12FA6B16180C760100E93F6A /* 356.png in Resources */,
+				12E9B7C818127A6F00067109 /* source change demo.nu in Resources */,
+				423602231791913C000E9F49 /* editor.nu in Resources */,
+				42CF88EF17FDE41C0061AF28 /* panel.nu in Resources */,
+				12FA6B0F180C760100E93F6A /* 158.png in Resources */,
+				42F47A6B17FAF8F700CD892A /* dragging.nu in Resources */,
+				12FA6B15180C760100E93F6A /* 355.png in Resources */,
+				12FA6B1A180C760100E93F6A /* arrow-forward.png in Resources */,
+				12FA6B13180C760100E93F6A /* 212.png in Resources */,
+				12E9B7C41811CAD800067109 /* sprite kit demo.nu in Resources */,
+				12FA6B0A180C760100E93F6A /* 063.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C1A9AD1791630300BEBF6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C1A9B61791630300BEBF6C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				22B3B3F613B033EE00B3AB31 /* old beautify.nu in Resources */,
+				425396B517E62BE300628460 /* test_markup.nu in Resources */,
+				22B3B3F813B033EE00B3AB31 /* bridgesupport.nu in Resources */,
+				22B3B3FA13B033EE00B3AB31 /* cblocks.nu in Resources */,
+				22B3B3FC13B033EE00B3AB31 /* cocoa.nu in Resources */,
+				22B3B3FE13B033EE00B3AB31 /* console.nu in Resources */,
+				22B3B40013B033EE00B3AB31 /* coredata.nu in Resources */,
+				22B3B40213B033EE00B3AB31 /* doc.nu in Resources */,
+				22B3B40413B033EE00B3AB31 /* fscript.nu in Resources */,
+				22B3B40613B033EE00B3AB31 /* generate.nu in Resources */,
+				22B3B40813B033EE00B3AB31 /* help.nu in Resources */,
+				22B3B40A13B033EE00B3AB31 /* match.nu in Resources */,
+				22B3B40C13B033EE00B3AB31 /* math.nu in Resources */,
+				22B3B40E13B033EE00B3AB31 /* menu.nu in Resources */,
+				22B3B41013B033EE00B3AB31 /* nibtools.nu in Resources */,
+				22B3B41213B033EE00B3AB31 /* nu.nu in Resources */,
+				22B3B41413B033EE00B3AB31 /* template.nu in Resources */,
+				22B3B41613B033EE00B3AB31 /* test.nu in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		423601E417919006000E9F49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423602271791913C000E9F49 /* Parser.m in Sources */,
+				423602221791913C000E9F49 /* Document.m in Sources */,
+				423602261791913C000E9F49 /* App.m in Sources */,
+				423601F117919006000E9F49 /* main.m in Sources */,
+				42CB5DC417BFEBB900CD274C /* Debugger.m in Sources */,
+				423602251791913C000E9F49 /* Editor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4298385E17F592BB00D735C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4298387517F5941100D735C8 /* Debugger.m in Sources */,
+				4298387417F593CB00D735C8 /* Parser.m in Sources */,
+				4298386717F592BB00D735C8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C1A9AA1791630300BEBF6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C1A9D61791637E00BEBF6C /* GCUndoManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B3B47313B0359300B3AB31 /* Nu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4298387017F592E400D735C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* Nu */;
+			targetProxy = 4298386F17F592E400D735C8 /* PBXContainerItemProxy */;
+		};
+		4298387217F592EC00D735C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 423601E717919006000E9F49 /* Nutor */;
+			targetProxy = 4298387117F592EC00D735C8 /* PBXContainerItemProxy */;
+		};
+		42CEE81F17EF460000CC4F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42C1A9AE1791630300BEBF6C /* GCUndoManager */;
+			targetProxy = 42CEE81E17EF460000CC4F95 /* PBXContainerItemProxy */;
+		};
+		42CEE82317EF460E00CC4F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* Nu */;
+			targetProxy = 42CEE82217EF460E00CC4F95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12F69740180C94E300AE9F55 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12F69741180C94E300AE9F55 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		423601ED17919006000E9F49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423601EE17919006000E9F49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		423601F317919006000E9F49 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				423601F417919006000E9F49 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		42C1A9B41791630300BEBF6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42C1A9B51791630300BEBF6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../examples/NuAnywhere/NuInject\"",
+					"\"$(SRCROOT)/..\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nu_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = Nu;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../examples/NuAnywhere/NuInject\"",
+					"\"$(SRCROOT)/..\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Nu_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = Nu;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SNOWLEOPARD,
+					DARWIN,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				KEEP_PRIVATE_EXTERNS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ledit",
+					"-lffi",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SNOWLEOPARD,
+					DARWIN,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				KEEP_PRIVATE_EXTERNS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-ledit",
+					"-lffi",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4236021317919007000E9F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "editor/editor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "editor/editor-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Nutor;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4236021417919007000E9F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "editor/editor-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "editor/editor-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = Nutor;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4298386D17F592BB00D735C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nush/nush-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				KEEP_PRIVATE_EXTERNS = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4298386E17F592BB00D735C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nush/nush-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				KEEP_PRIVATE_EXTERNS = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42C1A9CE1791630300BEBF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GCUndoManager/GCUndoManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "GCUndoManager/GCUndoManager-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		42C1A9CF1791630300BEBF6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GCUndoManager/GCUndoManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "GCUndoManager/GCUndoManager-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Nu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Nutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4236021217919007000E9F49 /* Build configuration list for PBXNativeTarget "Nutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4236021317919007000E9F49 /* Debug */,
+				4236021417919007000E9F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4298386C17F592BB00D735C8 /* Build configuration list for PBXNativeTarget "nush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4298386D17F592BB00D735C8 /* Debug */,
+				4298386E17F592BB00D735C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C1A9CD1791630300BEBF6C /* Build configuration list for PBXNativeTarget "GCUndoManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C1A9CE1791630300BEBF6C /* Debug */,
+				42C1A9CF1791630300BEBF6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

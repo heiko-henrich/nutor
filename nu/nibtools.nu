@@ -17,64 +17,64 @@
 ;;   limitations under the License.
 
 (class NSObject
-     ;; Get the children of an object.  By default, NSObjects have no children.
-     (- (id) children is nil)
-     
-     ;; Return a collection of objects from the object child-hierarchy rooted at the current object.
-     ;; Objects must match criteria in the provided block.
-     ;; For example, to return all the NSButton objects in a specified view, use:
-     ;;
-     ;;    <code>(myView allMatchingChildren: (do (v) (v isKindOfClass: NSButton)))</code>
-     (- (id) allMatchingChildren: (id) block is
-          (set matches ((NSMutableArray alloc) init))
-          (if (block self)
-              (matches addObject:self))
-          (if (self children)
-              ((self children) each: (do (child) (matches addObjectsFromArray: (child allMatchingChildren: block)))))
-          matches)
-     
-     ;; Return one object from the object child-hierarchy rooted at the current object.
-     ;; The object must match criteria in the provided block.
-     ;; For example, to return the NSButton object in a specified view, use:
-     ;;
-     ;;    <code>(myView onlyMatchingChild: (do (v) (v isKindOfClass: NSButton)))</code>
-     (- (id) onlyMatchingChild: (id) block is
-          (set results (self allMatchingChildren: block))
-          (results objectAtIndex:0)))
+ ;; Get the children of an object.  By default, NSObjects have no children.
+ (- (id) children is nil)
+ 
+ ;; Return a collection of objects from the object child-hierarchy rooted at the current object.
+ ;; Objects must match criteria in the provided block.
+ ;; For example, to return all the NSButton objects in a specified view, use:
+ ;;
+ ;;    <code>(myView allMatchingChildren: (do (v) (v isKindOfClass: NSButton)))</code>
+ (- (id) allMatchingChildren: (id) block is
+    (set matches ((NSMutableArray alloc) init))
+    (if (block self)
+        (matches addObject:self))
+    (if (self children)
+        ((self children) each: (do (child) (matches addObjectsFromArray: (child allMatchingChildren: block)))))
+    matches)
+ 
+ ;; Return one object from the object child-hierarchy rooted at the current object.
+ ;; The object must match criteria in the provided block.
+ ;; For example, to return the NSButton object in a specified view, use:
+ ;;
+ ;;    <code>(myView onlyMatchingChild: (do (v) (v isKindOfClass: NSButton)))</code>
+ (- (id) onlyMatchingChild: (id) block is
+    (set results (self allMatchingChildren: block))
+    (results objectAtIndex:0)))
 
 (class NSView
-     ;; The children of a view are its subviews.
-     (- (id) children is
-          (append (super children) ((self subviews) list))))
+ ;; The children of a view are its subviews.
+ (- (id) children is
+    (append (super children) ((self subviews) list))))
 
 (class NSTableView
-     ;; The children of a table view are its table columns.
-     (- (id) children is
-          (append (super children) ((self tableColumns) list))))
+ ;; The children of a table view are its table columns.
+ (- (id) children is
+    (append (super children) ((self tableColumns) list))))
 
 (class NSWindow
-     ;; The child of a window is its contentView.
-     (- (id) children is
-          (append (super children) (list (self contentView)))))
+ ;; The child of a window is its contentView.
+ (- (id) children is
+    (append (super children) (list (self contentView)))))
 
 (class NSWindowController
-     ;; The child of a window controller is its window.
-     (- (id) children is
-          (append (super children) (list (self window)))))
+ ;; The child of a window controller is its window.
+ (- (id) children is
+    (append (super children) (list (self window)))))
 
 (class NSApplication
-     ;; The children of an application are its menu and its windows.
-     (- (id) children is
-          (append (super children) (list (self mainMenu)) ((self windows) list))))
+ ;; The children of an application are its menu and its windows.
+ (- (id) children is
+    (append (super children) (list (self mainMenu)) ((self windows) list))))
 
 (class NSMenu
-     ;; The children of a menu are its items.
-     (- (id) children is
-          (append (super children) ((self itemArray) list))))
+ ;; The children of a menu are its items.
+ (- (id) children is
+    (append (super children) ((self itemArray) list))))
 
 (class NSMenuItem
-     ;; The children of a menu item are its submenus.
-     (- (id) children is
-          (if (self submenu)
-              (then (append (super children) (list (self submenu))))
-              (else (super children)))))
+ ;; The children of a menu item are its submenus.
+ (- (id) children is
+    (if (self submenu)
+        (then (append (super children) (list (self submenu))))
+        (else (super children)))))
