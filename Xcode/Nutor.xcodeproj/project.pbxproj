@@ -1049,7 +1049,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../examples/NuAnywhere/NuInject\"",
 					"\"$(SRCROOT)/..\"",
 				);
 				FRAMEWORK_VERSION = A;
@@ -1078,7 +1077,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../examples/NuAnywhere/NuInject\"",
 					"\"$(SRCROOT)/..\"",
 				);
 				FRAMEWORK_VERSION = A;

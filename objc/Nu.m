@@ -5937,7 +5937,7 @@ static NSMutableDictionary *handlerWarehouse = nil;
 
 - (NSString *) name
 {
-    return m ? [NSString stringWithCString:(sel_getName(method_getName(m))) encoding:NSUTF8StringEncoding] : [NSNull null];
+    return m ? [NSString stringWithCString:(sel_getName(method_getName(m))) encoding:NSUTF8StringEncoding] : (NSString *)[NSNull null];
 }
 
 - (int) argumentCount
@@ -11247,7 +11247,7 @@ static int deallocationCount = 0;
 
 @implementation NuMarkupOperator
 
-static NSArray *voidHTMLElements = nil;
+static NSSet *voidHTMLElements = nil;
 static NSDictionary *elementPrefixes = nil;
 
 + (void) initialize {
