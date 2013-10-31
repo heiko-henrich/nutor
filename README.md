@@ -2,7 +2,7 @@
 ###A Nu Editor
 
 This is an editor for the marvelous Nu programming language.
-See Tim Burk's programming.nu webseite for more information.
+See Tim Burk's [programming.nu] (http://programming.nu) webseite for more information.
 
 This was not supposed to be a finished work,
 more a kind of demo for the NuCodeEditor class, 
