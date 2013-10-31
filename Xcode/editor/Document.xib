@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="Document">
+        <customObject id="-2" userLabel="File's Owner" customClass="NutorDocument">
             <connections>
                 <outlet property="MessageTextView" destination="1nb-cq-eRd" id="e59-W9-MEP"/>
                 <outlet property="autosaveOption" destination="dKv-kd-QCx" id="Kyn-eb-1ju"/>
@@ -70,11 +70,11 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </clipView>
-                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="M1h-4b-Xkd">
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="M1h-4b-Xkd">
                                             <rect key="frame" x="0.0" y="556" width="378" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="e9Z-0k-GTh">
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="e9Z-0k-GTh">
                                             <rect key="frame" x="362" y="0.0" width="16" height="572"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -111,11 +111,11 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </clipView>
-                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="Kko-wd-U3S">
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Kko-wd-U3S">
                                             <rect key="frame" x="0.0" y="556" width="372" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="xUa-fV-ZeX">
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="xUa-fV-ZeX">
                                             <rect key="frame" x="356" y="0.0" width="16" height="572"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -176,11 +176,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </clipView>
-                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="9Xy-fV-pBM">
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="9Xy-fV-pBM">
                                 <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
-                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" id="pee-ab-FhM">
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pee-ab-FhM">
                                 <rect key="frame" x="-100" y="-100" width="16" height="39"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
@@ -893,7 +893,7 @@
         <image name="356" width="32" height="32"/>
         <image name="358" width="32" height="32"/>
         <image name="369" width="32" height="32"/>
-        <image name="NSActionTemplate" width="15" height="15"/>
+        <image name="NSActionTemplate" width="14" height="14"/>
         <image name="arrow-back" width="48" height="48"/>
         <image name="arrow-forward" width="48" height="48"/>
     </resources>

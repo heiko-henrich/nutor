@@ -12,11 +12,18 @@
 
 (set $console ((NuConsoleWindowController alloc) init))
 
+;; a global function, that returns the current active document
 (global document (do ()
                      (NSDocumentController sharedDocumentController 
                                         <- currentDocument )))
 
-(class Document
+;; a global function, that returns the current active editor
+(global editor (do ()
+                   (NSDocumentController sharedDocumentController 
+                                      <- currentDocument 
+                                      <- editor)))
+
+(class NutorDocument
  (- toggleConsole: sender is
     ($console toggleConsole: self))
  

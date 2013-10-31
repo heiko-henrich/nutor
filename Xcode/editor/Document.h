@@ -36,7 +36,7 @@
 */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@interface Document : NSDocument <NSTextDelegate, NSSplitViewDelegate>
+@interface NutorDocument : NSDocument <NSTextDelegate, NSSplitViewDelegate>
 
 @property (unsafe_unretained) IBOutlet NuCodeEditor *editor;
 @property (unsafe_unretained) IBOutlet NuCodeEditor *codeView;

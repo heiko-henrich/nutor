@@ -54,7 +54,7 @@
                            cdarIndent: 3.0
                ))))
 
-(class Document
+(class NutorDocument
  (- restoreDefaults is
     (self customizeToolbar)
     (self set: (backTranslationEnabled: NO 

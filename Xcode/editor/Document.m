@@ -57,7 +57,7 @@
 
 @end
 
-@implementation Document
+@implementation NutorDocument
 {
     NSString *_loadedData;
 }

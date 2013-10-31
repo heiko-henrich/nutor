@@ -4,7 +4,7 @@
 
 
 
-(class Document
+(class NutorDocument
  
  (- customizeToolbar is 
     (set @minWinFrame nil)
