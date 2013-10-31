@@ -87,11 +87,12 @@ See document.nu.
 
 
 
-###What could be done
+###What's missing
 
 * auto completion is just dumb.
 But it is not trivial to make it better, but there are several possibilities. See completions.nu for more information.
 * the UI of the editor could be more consistent
+* NSPopover instead of the error messages text field
 * more conveniance functions ...
 * memory management
 * finding bugs
@@ -104,4 +105,10 @@ Finally I imagine an IDE, where the source code is not just organized in files, 
 One tag for the class, one for the file, one for an informal protocol which is implemented, one for tests, one for a certain functionality and so on.
 So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
 This would more reflect the workflow for coding, at least mine.
+
+###What could be done
+
+Feel free to fork and code your own IDE.
+I am curious to see your ideas.
+If you'd like to contribute, there are a lot of possibilities.
 
