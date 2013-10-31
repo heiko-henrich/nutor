@@ -59,7 +59,7 @@ Editor.h/m are dependent on the Parser.h/m and on GCUndoManager,
 a NSUndoManager replacement written by Graham Cox.
 I've put this in an extra framework, because GCUndoManager is not compiled with ARC.
 
-###Debugger.h/m
+####Debugger.h/m
 
 Well this is not a Debugger yet, but there are some nasty hacks to implement a step debugger later.
 It is used here to get intermediate evaluation results.
