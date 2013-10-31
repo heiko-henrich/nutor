@@ -77,7 +77,9 @@ But everything should work fine with the original Nu.h/m which Tim Burks provide
 
 Here is all the code to get the app working.
 Again, all the window controller code is in the
-
+NutorDocument class. 
+Also the NutorDocument class got extended in some nu files.
+See document.nu.
 
 
 
