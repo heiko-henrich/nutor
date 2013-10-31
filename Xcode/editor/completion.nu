@@ -4,10 +4,15 @@
 ;; the best thing would be a kind of type guessing mechanism:
 ;; it could work like evalWithContext:
 ;; but instead guessClassWithContext: could guess the class of a possible evaluation
-;; but since objc runtime dind't deliver exact class informationfor methods
+;; but since objc runtime dind't deliver exact class information for methods
 ;; one would probably end up with somehow reading or processing header files to
 ;; get the necessary information
 ;; very interesting, but - a lot of work.
+;; or one could use the live evaluation feature:
+;; first write a kind of test,
+;; then write the function or method you want:
+;; during typing the test gets evaluated and gives information about the types of the existing symbols.
+;; or a mix of the 2 methods could be possible
 
 (class NuCodeEditor
  

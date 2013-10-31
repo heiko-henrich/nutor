@@ -40,6 +40,7 @@ There are plans for an asynchronous remote parser based on this.
 Currently the NutorParser replaces as a subclass of NuParser [Nu sharedParser] when included into a project.
 
 
+
 ####Editor.h/m
 
 The editor doesn't follow the exactly the MVC paradigm.
@@ -59,11 +60,13 @@ Editor.h/m are dependent on the Parser.h/m and on GCUndoManager,
 a NSUndoManager replacement written by Graham Cox.
 I've put this in an extra framework, because GCUndoManager is not compiled with ARC.
 
+
 ####Debugger.h/m
 
 Well this is not a Debugger yet, but there are some nasty hacks to implement a step debugger later.
 It is used here to get intermediate evaluation results.
 See the files in the examples folder.
+
 
 ####Nu.h/m
 
@@ -72,6 +75,7 @@ It is incoluded here, for two reasons:
 1. to compile a standalone executable without dependencies.
 2. though I didn't like that, I had to change 2 lines to get this "result inlining" thing working in all circumstances (well almost).
 But everything should work fine with the original Nu.h/m which Tim Burks provides in his repository.
+
 
 ####Document.h/m
 
@@ -82,4 +86,22 @@ Also the NutorDocument class got extended in some nu files.
 See document.nu.
 
 
+
+###What could be done
+
+* auto completion is just dumb.
+But it is not trivial to make it better, but there are several possibilities. See completions.nu for more information.
+* the UI of the editor could be more consistent
+* more conveniance functions ...
+* memory management
+* finding bugs
+
+###Future Directions
+
+The next step towards a kind of IDE would be a remote parser, which could also work asynchronously in parallel to the editor parser on a client app, which could also run on iOS.
+From there I could implement a real debugger with breakpoints etc., which displays information in the editor.
+Finally I imagine an IDE, where the source code is not just organized in files, but in smaller chunks like single function or method definitions. These could be ordered by tags, where every chunk could have more than one of them:
+One tag for the class, one for the file, one for an informal protocol which is implemented, one for tests, one for a certain functionality and so on.
+So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
+This would more reflect the workflow for coding, at least mine.
 
