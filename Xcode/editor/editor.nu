@@ -33,7 +33,6 @@
 (load "dragging")
 (load "linesplitting")
 (load "conversions")
-(load "window")
 
 ;; a global function, that returns the current active editor
 (global editor (do ()

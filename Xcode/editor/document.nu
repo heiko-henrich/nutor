@@ -7,6 +7,7 @@
 (load "defaults")
 (load "console")
 (load "guide") 
+(load "window")
 (load "toolbar")
 
 (set $console ((NuConsoleWindowController alloc) init))
