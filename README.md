@@ -108,7 +108,9 @@ This would more reflect the workflow for coding, at least mine.
 
 ###What could be done
 
-Feel free to fork and code your own IDE.
+Feel free to fork and code your own IDE,
 I am curious to see your ideas.
 If you'd like to contribute, there are a lot of possibilities.
+
+contact: heiko.henrich@gmail.com
 
