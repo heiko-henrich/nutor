@@ -1,5 +1,5 @@
 # Nutor
-###A Nu Editor
+##A Nu Editor
 
 This is an editor for the marvelous Nu programming language.
 See Tim Burk's [programming.nu] (http://programming.nu) webseite for more information.
@@ -34,7 +34,7 @@ notabley promoted by Bret Victor (Inventing on principle) and
 Chris Granger (light table).
 
 
-###The source
+##The source
 
 ####Parser.h/m
 
@@ -55,7 +55,6 @@ Currently the NutorParser replaces as a subclass of NuParser [Nu sharedParser] w
 
 
 ####Editor.h/m
-
 The editor doesn't follow the exactly the MVC paradigm.
 There are just extensions of the NSTextView and NSTextStorage base classes.
 NuSourceStorage is the subclass of NSTextStorage and represents the model layer,
@@ -75,14 +74,12 @@ I've put this in an extra framework, because GCUndoManager is not compiled with 
 
 
 ####Debugger.h/m
-
 Well this is not a Debugger yet, but there are some nasty hacks to implement a step debugger later.
 It is used here to get intermediate evaluation results.
 See the files in the examples folder.
 
 
 ####Nu.h/m
-
 This is the Nu "rundtime".
 It is incoluded here, for two reasons:
 1. to compile a standalone executable without dependencies.
@@ -91,7 +88,6 @@ But everything should work fine with the original Nu.h/m which Tim Burks provide
 
 
 ####Document.h/m
-
 Here is all the code to get the app working.
 Again, all the window controller code is in the
 NutorDocument class. 
@@ -99,9 +95,8 @@ Also the NutorDocument class got extended in some nu files.
 See document.nu.
 
 
-
-###What's missing
-
+##So What ...
+####what's missing
 * auto completion is just dumb.
 But it is not trivial to make it better, but there are several possibilities. See completions.nu for more information.
 * the UI of the editor could be more consistent
@@ -110,8 +105,7 @@ But it is not trivial to make it better, but there are several possibilities. Se
 * memory management
 * finding bugs
 
-###Future Directions
-
+###what could a future IDE look like
 The next step towards a kind of IDE would be a remote parser, which could also work asynchronously in parallel to the editor parser on a client app, which could also run on iOS.
 From there I could implement a real debugger with breakpoints etc., which displays information in the editor.
 Finally I imagine an IDE, where the source code is not just organized in files, but in smaller chunks like single function or method definitions. These could be ordered by tags, where every chunk could have more than one of them:
@@ -119,11 +113,10 @@ One tag for the class, one for the file, one for an informal protocol which is i
 So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
 This would more reflect the workflow for coding, at least mine.
 
-###What could be done
-
-Feel free to fork and code your own IDE,
+###what could be done
+Feel free to fork and build your own IDE,
 I am curious to see your ideas.
-If you'd like to contribute, there are a lot of possibilities.
+If you'd like to contribute, there are a lot of possibilities, as you can easily see.
 
 contact: heiko.henrich@gmail.com
 
