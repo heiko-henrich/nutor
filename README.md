@@ -105,10 +105,10 @@ But it is not trivial to make it better, but there are several possibilities. Se
 * memory management
 * finding bugs
 
-###what could a future IDE look like
-The next step towards a kind of IDE would be a remote parser, which could also work asynchronously in parallel to the editor parser on a client app, which could also run on iOS.
-From there I could implement a real debugger with breakpoints etc., which displays information in the editor.
-Finally I imagine an IDE, where the source code is not just organized in files, but in smaller chunks like single function or method definitions. These could be ordered by tags, where every chunk could have more than one of them:
+####what could a future IDE look like
+* The next step towards a kind of IDE would be a remote parser, which could also work asynchronously in parallel to the editor parser on a client app, which could also run on iOS.
+* From there I could implement a real debugger with breakpoints etc., which displays information in the editor.
+* Finally I imagine an IDE, where the source code is not just organized in files, but in smaller chunks like single function or method definitions. These could be ordered by tags, where every chunk could have more than one of them:
 One tag for the class, one for the file, one for an informal protocol which is implemented, one for tests, one for a certain functionality and so on.
 So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
 This would more reflect the workflow for coding, at least mine.
