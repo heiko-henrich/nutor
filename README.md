@@ -11,15 +11,28 @@ but it already works as a good Nu source code editor,
 with the support of Apples native NSDocument class (version support)
 and extensibility by Nu itself.
 
+Features of the NuCodeEditor class are
+* syntax highlighting
+* immediate auto indentation
+* easy and semi-automatic parentheses handling ("smart parens")
+* highlighting of syntax errors and exceptions
+* changing numeric values by dragging
+* editing colors values with th cocoa color panel
+* coloring of list levels (looks kind of weired)
+* presenting intemediate evaluation results within the source code (experimental)
+* "live evaluation": execution of code while still typing (see examples folder / also highly experimental)
+
 There are some additions to the syntax of Nu,
 which are just experiments, some more, some less useful.
-Press the help button in Nutor.app to see more.
+I like the dot syntax very much, which basically works the same as in objective c 2.0.
+Press the help button in Nutor.app to see more of this.
 Also there are some examples in the editor directory.
 The header files give you some background information.
 
-Some experiments are inspired by live programming,
+Some of these experiments are inspired by live programming,
 notabley promoted by Bret Victor (Inventing on principle) and 
 Chris Granger (light table).
+
 
 ###The source
 
@@ -102,7 +115,7 @@ But it is not trivial to make it better, but there are several possibilities. Se
 The next step towards a kind of IDE would be a remote parser, which could also work asynchronously in parallel to the editor parser on a client app, which could also run on iOS.
 From there I could implement a real debugger with breakpoints etc., which displays information in the editor.
 Finally I imagine an IDE, where the source code is not just organized in files, but in smaller chunks like single function or method definitions. These could be ordered by tags, where every chunk could have more than one of them:
-One tag for the class, one for the file, one for an informal protocol which is implemented, one for tests, one for a certain functionality and so on.  
+One tag for the class, one for the file, one for an informal protocol which is implemented, one for tests, one for a certain functionality and so on.
 So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
 This would more reflect the workflow for coding, at least mine.
 
