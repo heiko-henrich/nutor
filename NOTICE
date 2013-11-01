@@ -16,3 +16,5 @@ libffi/* is Copyright (c) 1996-2003  Red Hat, Inc.
 
 iphone/include/pcre.h is by Philip Hazel and Copyright (c) 1997-2008 University of Cambridge.
 The iphone/libpcre.a was generated from the PCRE sources.
+
+GCUndoManager is Copyright by Graham Cox
