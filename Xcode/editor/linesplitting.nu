@@ -9,32 +9,16 @@
 
 (class NuObjectParser
  
- (- proposedNewlineChanges is nil)
- 
- (- newlineInsertion is 
-    (list "\n" 
-          (if self.previous
-              (then self.previous.end)
-              (else self.withOffset))
-          0))
- (- newlineDeletion is
-    (list (if (NuObjectParser.endOfAtomCharacters 
-                  characterIsMember: (self.root.job characterAt: self.location))
-              (then "")
-              (else " "))
-          (set start (if self.previous
-                         (then self.previous.end)
-                         (else self.withOffset)))
-          (- self.location start))))
+ (- proposedLineSplittingParsers is nil))
 
 (class NuListParser 
  
- (- lineStartingDescendants is 
+ (- lineSplittingDescendants is 
     
     (self.descendants select: (do (parser)
                                   (parser isFirstParserInLine))))
  
- (- proposedNewlineChanges is
+ (- proposedLineSplittingParsers is
     
     (function multiline-children ()
         (children allValues 
@@ -59,7 +43,7 @@
     
     (set child self.lastChild)
     (while child  
-           (changes addObjectsFromArray: (set child-changes (child proposedNewlineChanges)))
+           (changes addObjectsFromArray: (set child-changes (child proposedLineSplittingParsers)))
            ( children child.positionInList (list child child-changes))
            (set child child.previous))
     
@@ -93,34 +77,25 @@
         (then changes)
         (else nil)))
  
- (- lineSplittingInsertions is
-    (set current-linesplitters (self lineStartingDescendants))
-    (set new-linesplitters (self proposedNewlineChanges) )
+ (- lineSplittingTextChanges is
+    (set current-linesplitters (self lineSplittingDescendants))
+    (set new-linesplitters (self proposedLineSplittingParsers) )
     (set newlines-to-delete (current-linesplitters select: (do (parser)
                                                                (not (new-linesplitters containsObject:  parser)))))
     (set newlines-to-insert (new-linesplitters select: (do (parser)
                                                            (not (current-linesplitters containsObject:  parser)))))
     (set deletions (newlines-to-delete map: (do (parser)
-                                                (parser newlineDeletion))))
+                                                (parser newlineDeletionTextChange))))
     (set insertions (newlines-to-insert map: (do (parser)
-                                                 (parser newlineInsertion))))
+                                                 (parser newlineInsertionTextChange))))
     (insertions addObjectsFromArray: deletions)
     insertions   
  ))
 
 (class NuSourceStorage
- (- processChanges: changes-array is
-    (changes-array sortedArrayUsingBlock: (do (a b)
-                                              (cond ((> a.second b.second) -1) 
-                                                    ((< a.second b.second) 1)
-                                                    (else 0)))
-                <- map: (do (change)
-                            (self replaceCharactersInRange: (change cdr)
-                                                withString: (change car)))))
- 
  
  (- splitLinesIn: parser is
-    (self processChanges:(parser lineSplittingInsertions))) 
+    (self processTextChanges:(parser lineSplittingTextChanges))) 
 )
 
 (function newlines-for (car-symbol *rules)

@@ -1853,7 +1853,7 @@ static NSCharacterSet * _nonWSbutNL;
         textChange = [TextChange withRange:[self possibleDisplayParserRange]
                                     string:[NSMutableString stringWithFormat:@" => %@", [[self result] asNuExpression]]];
         
-        if (![[NuObjectParser endOfAtomCharacters] characterIsMember:[self.root.job characterAt: textChange.end]])
+        if (![[NuParserClassRegistry endOfAtomCharacters] characterIsMember:[self.root.job characterAt: textChange.end]])
         {
             [textChange.string appendString:@" "];
         }
@@ -1866,13 +1866,28 @@ static NSCharacterSet * _nonWSbutNL;
 {
     NSRange range = self.rangeIncludingSpaces;
     NSString *delimiter;
-    if ([[NuObjectParser endOfAtomCharacters] characterIsMember:[self.root.job characterAt:range.location + range.length]])
+    if ([[NuParserClassRegistry endOfAtomCharacters] characterIsMember:[self.root.job characterAt:range.location + range.length]])
         delimiter = @"";
     else
         delimiter = @" ";
     return [TextChange withRange:range string:delimiter];
 }
 
+- (TextChange *) newlineInsertionTextChange
+{
+    return [TextChange withLocation:self.previous ? self.previous.end : self.withOffset
+                             length:0
+                             string:@"\n"];
+}
+
+- (TextChange *) newlineDeletionTextChange
+{
+    NSInteger start = self.previous ? self.previous.end : self.withOffset;
+    return [TextChange withLocation: start
+                             length: self.location - start
+                             string: [[NuParserClassRegistry endOfAtomCharacters]
+                                      characterIsMember: [self.root.job characterAt: self.location]] ? @"" : @" "];
+}
 
 - (NSMutableArray *)parserStackAt:(NSInteger)pos
 {

@@ -12,10 +12,11 @@ with the support of Apples native NSDocument class (version support)
 and extensibility by Nu itself.
 
 Features of the NuCodeEditor class are
-* syntax highlighting
+* syntax and parens highlighting
 * immediate auto indentation
 * easy and semi-automatic parentheses handling ("smart parens")
 * highlighting of syntax errors and exceptions
+* a simple auto completion mechanism
 * changing numeric values by dragging
 * editing colors values with th cocoa color panel
 * coloring of list levels (looks kind of weired)
@@ -113,7 +114,7 @@ One tag for the class, one for the file, one for an informal protocol which is i
 So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
 This would more reflect the workflow for coding, at least mine.
 
-###what could be done
+####what could be done
 Feel free to fork and build your own IDE,
 I am curious to see your ideas.
 If you'd like to contribute, there are a lot of possibilities, as you can easily see.

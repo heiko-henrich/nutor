@@ -86,10 +86,10 @@
 
 ;; another example to demonstrate this:
 
-^?(((editor) sourceStorage) length) => 0  ;; the length of this file
+^?(((editor) sourceStorage) length) => 6446  ;; the length of this file
 
 (set count 0)
-^?(set count (+ count 1)) => '<invalid Result> 
+^?(set count (+ count 1)) => 2 
 
 ;; this counts up everytime its evaluated.
 ;; this does not seem to make any sense, but look at this:
@@ -101,16 +101,22 @@
           
        <- map: (do (line) line.uppercaseString)              |? => '<invalid Result>
           
-       <- map: (do (line) (line stringByPaddingToLength: 21 
+       <- map: (do (line) (line stringByPaddingToLength: 20 
                                              withString: "-" 
                                         startingAtIndex: 0)) |? => '<invalid Result>
        <- map: (do(line)
                   (+ "|" line "|\n"))                        |? => '<invalid Result>
        <- reduce: (do (acc line)
                       (+ acc line))               
-            from: "HEADER\n"                                 |? => '<invalid Result> )))
+            from: "THIS IS A HEADER\n"                                 |? => '<invalid Result> )))
 
-^?("This is silly,   |you know? |or what do you |think?" separateLinesWith: " |") => '<invalid Result>
+^?("This is silly,   |you know? |or what do you |think?" separateLinesWith: " |") => <<+STRING
+                                                                                        THIS IS A HEADER
+                                                                                        |THIS IS SILLY,  ----|
+                                                                                        |YOU KNOW?-----------|
+                                                                                        |OR WHAT DO YOU------|
+                                                                                        |THINK?--------------|
+                                                                                        STRING
 
 ;; if you haven't done it, you should press "eval all" now
 ;; so you can test your method. while still writing
