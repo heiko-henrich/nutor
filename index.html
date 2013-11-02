@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Nutor : An editor for the Nu Programming language." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Nutor</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/heiko-henrich/nutor">View on GitHub</a>
+
+          <h1 id="project_title">Nutor</h1>
+          <h2 id="project_tagline">An editor for the Nu Programming language.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/heiko-henrich/nutor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/heiko-henrich/nutor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="nutor" class="anchor" href="#nutor"><span class="octicon octicon-link"></span></a>Nutor</h1>
+
+<h2>
+<a name="a-nu-editor" class="anchor" href="#a-nu-editor"><span class="octicon octicon-link"></span></a>A Nu Editor</h2>
+
+<p>This is an editor for the marvelous Nu programming language.
+See Tim Burk's <a href="http://programming.nu">programming.nu</a> webseite for more information.</p>
+
+<p>This was not supposed to be a finished work,
+more a kind of demo for the NuCodeEditor class, 
+a subclass of NSTextView,
+but it already works as a good Nu source code editor,
+with the support of Apples native NSDocument class (version support)
+and extensibility by Nu itself.</p>
+
+<p>Features of the NuCodeEditor class are</p>
+
+<ul>
+<li>syntax and parens highlighting</li>
+<li>immediate auto indentation</li>
+<li>easy and semi-automatic parentheses handling ("smart parens")</li>
+<li>highlighting of syntax errors and exceptions</li>
+<li>a simple auto completion mechanism</li>
+<li>changing numeric values by dragging</li>
+<li>editing colors values with th cocoa color panel</li>
+<li>coloring of list levels (looks kind of weired)</li>
+<li>presenting intemediate evaluation results within the source code (experimental)</li>
+<li>"live evaluation": execution of code while still typing (see examples folder / also highly experimental)</li>
+</ul><p>There are some additions to the syntax of Nu,
+which are just experiments, some more, some less useful.
+I like the dot syntax very much, which basically works the same as in objective c 2.0.
+Press the help button in Nutor.app to see more of this.
+Also there are some examples in the editor directory.
+The header files give you some background information.</p>
+
+<p>Some of these experiments are inspired by live programming,
+notabley promoted by Bret Victor (Inventing on principle) and 
+Chris Granger (light table).</p>
+
+<h2>
+<a name="the-source" class="anchor" href="#the-source"><span class="octicon octicon-link"></span></a>The source</h2>
+
+<h4>
+<a name="parserhm" class="anchor" href="#parserhm"><span class="octicon octicon-link"></span></a>Parser.h/m</h4>
+
+<p>At some point I realized, that I couldn't get further with the current Nu parser:
+for syntax coloring, debugging etc I needed a more tight connection between the source code and the parsed cells and objects.
+So I've written this new parser.
+Technically, every item in the source code, be it a list, a symbol or a string, has it's own parser object, an instance of a subclass of NuObjectParser, which connects its location in the code to the list cell, whose car is the parsed object.</p>
+
+<p>Initially not intended, I could implement an incrementally update mechanism: When a part of the source is changed (let's say a new character is typed in) just the affected part of the cell tree is reparsed. </p>
+
+<p>These two mechanisms made it possible to build an editor  for large source strings, which could immediately react on changes and give the user an immediate feedback.</p>
+
+<p>Parser.h/m should are just depnedent on Nu.m, so they should run on iOS too.
+There are plans for an asynchronous remote parser based on this.</p>
+
+<p>Currently the NutorParser replaces as a subclass of NuParser [Nu sharedParser] when included into a project.</p>
+
+<h4>
+<a name="editorhm" class="anchor" href="#editorhm"><span class="octicon octicon-link"></span></a>Editor.h/m</h4>
+
+<p>The editor doesn't follow the exactly the MVC paradigm.
+There are just extensions of the NSTextView and NSTextStorage base classes.
+NuSourceStorage is the subclass of NSTextStorage and represents the model layer,
+including an undo manager. The original undo manager
+of NSTextView didn't like programmatic text changes very well.
+And putting the undo manager to the model allows multiple instances of NSTextview 
+for one NSTextStorage.</p>
+
+<p>NuCodeEditor inherits from NSTextView and implements a lot of controller functionalities,
+like the original NSTextView class too (The view stuff is mostly handled in NSLayoutManager and NSTextContainer).
+Most of the nu files extend the functionality fo NuCodeEditor.
+See "editor.nu" for the loaded files.</p>
+
+<p>Editor.h/m are dependent on the Parser.h/m and on GCUndoManager,
+a NSUndoManager replacement written by Graham Cox.
+I've put this in an extra framework, because GCUndoManager is not compiled with ARC.</p>
+
+<h4>
+<a name="debuggerhm" class="anchor" href="#debuggerhm"><span class="octicon octicon-link"></span></a>Debugger.h/m</h4>
+
+<p>Well this is not a Debugger yet, but there are some nasty hacks to implement a step debugger later.
+It is used here to get intermediate evaluation results.
+See the files in the examples folder.</p>
+
+<h4>
+<a name="nuhm" class="anchor" href="#nuhm"><span class="octicon octicon-link"></span></a>Nu.h/m</h4>
+
+<p>This is the Nu "rundtime".
+It is incoluded here, for two reasons:
+1. to compile a standalone executable without dependencies.
+2. though I didn't like that, I had to change 2 lines to get this "result inlining" thing working in all circumstances (well almost).
+But everything should work fine with the original Nu.h/m which Tim Burks provides in his repository.</p>
+
+<h4>
+<a name="documenthm" class="anchor" href="#documenthm"><span class="octicon octicon-link"></span></a>Document.h/m</h4>
+
+<p>Here is all the code to get the app working.
+Again, all the window controller code is in the
+NutorDocument class. 
+Also the NutorDocument class got extended in some nu files.
+See document.nu.</p>
+
+<h2>
+<a name="so-what-" class="anchor" href="#so-what-"><span class="octicon octicon-link"></span></a>So What ...</h2>
+
+<h4>
+<a name="whats-missing" class="anchor" href="#whats-missing"><span class="octicon octicon-link"></span></a>what's missing</h4>
+
+<ul>
+<li>auto completion is just dumb.
+But it is not trivial to make it better, but there are several possibilities. See completions.nu for more information.</li>
+<li>the UI of the editor could be more consistent</li>
+<li>NSPopover instead of the error messages text field</li>
+<li>more conveniance functions ...</li>
+<li>memory management</li>
+<li>finding bugs</li>
+</ul><h4>
+<a name="what-could-a-future-ide-look-like" class="anchor" href="#what-could-a-future-ide-look-like"><span class="octicon octicon-link"></span></a>what could a future IDE look like</h4>
+
+<ul>
+<li>The next step towards a kind of IDE would be a remote parser, which could also work asynchronously in parallel to the editor parser on a client app, which could also run on iOS.</li>
+<li>From there I could implement a real debugger with breakpoints etc., which displays information in the editor.</li>
+<li>Finally I imagine an IDE, where the source code is not just organized in files, but in smaller chunks like single function or method definitions. These could be ordered by tags, where every chunk could have more than one of them:
+One tag for the class, one for the file, one for an informal protocol which is implemented, one for tests, one for a certain functionality and so on.
+So these chunks could be grouped together as currently needed and mixed with tests or be just command line kind of "chunks" to try out certain things, which could get easily deleted when they are not needed anymore.
+This would more reflect the workflow for coding, at least mine.</li>
+</ul><h4>
+<a name="what-could-be-done" class="anchor" href="#what-could-be-done"><span class="octicon octicon-link"></span></a>what could be done</h4>
+
+<p>Feel free to fork and build your own IDE,
+I am curious to see your ideas.
+If you'd like to contribute, there are a lot of possibilities, as you can easily see.</p>
+
+<p>contact: <a href="mailto:heiko.henrich@gmail.com">heiko.henrich@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Nutor maintained by <a href="https://github.com/heiko-henrich">heiko-henrich</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
