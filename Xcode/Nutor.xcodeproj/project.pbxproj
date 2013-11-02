@@ -64,7 +64,6 @@
 		22B3B41613B033EE00B3AB31 /* test.nu in Resources */ = {isa = PBXBuildFile; fileRef = 22B3B3F513B033EE00B3AB31 /* test.nu */; };
 		22B3B47313B0359300B3AB31 /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B3B41D13B0359300B3AB31 /* Nu.m */; };
 		22B3B50713B038D000B3AB31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3B50613B038D000B3AB31 /* Foundation.framework */; };
-		420B526717F2EA8A00768EEF /* GCUndoManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */; };
 		423601E917919006000E9F49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C1A93B179150C000BEBF6C /* Cocoa.framework */; };
 		423601EF17919006000E9F49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 423601ED17919006000E9F49 /* InfoPlist.strings */; };
 		423601F117919006000E9F49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 423601F017919006000E9F49 /* main.m */; };
@@ -82,6 +81,7 @@
 		4243274817F5AA78008D5F9D /* nu.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4243274717F5AA78008D5F9D /* nu.icns */; };
 		4243274A17F5F5AB008D5F9D /* playground.nu in Resources */ = {isa = PBXBuildFile; fileRef = 4243274917F5F5AB008D5F9D /* playground.nu */; };
 		425312AB1822B695006670D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425312AA1822B695006670D3 /* MainMenu.xib */; };
+		425312B218258415006670D3 /* GCUndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1A9D41791637E00BEBF6C /* GCUndoManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		425318F4179427CE00F183E1 /* utilities.nu in Resources */ = {isa = PBXBuildFile; fileRef = 425318F3179427CE00F183E1 /* utilities.nu */; };
 		425396B517E62BE300628460 /* test_markup.nu in Resources */ = {isa = PBXBuildFile; fileRef = 425396B417E62BE300628460 /* test_markup.nu */; };
 		427B09A617E867FE005E218D /* focus.nu in Resources */ = {isa = PBXBuildFile; fileRef = 427B09A517E867FE005E218D /* focus.nu */; };
@@ -92,15 +92,10 @@
 		4298387417F593CB00D735C8 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 423602211791913C000E9F49 /* Parser.m */; };
 		4298387517F5941100D735C8 /* Debugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB5DC317BFEBB900CD274C /* Debugger.m */; };
 		42A0984F17F2E8010072963B /* Nu.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Nu.framework */; };
-		42C1A9B01791630300BEBF6C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C1A93B179150C000BEBF6C /* Cocoa.framework */; };
-		42C1A9B61791630300BEBF6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42C1A9B41791630300BEBF6C /* InfoPlist.strings */; };
-		42C1A9D51791637E00BEBF6C /* GCUndoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C1A9D31791637E00BEBF6C /* GCUndoManager.h */; };
-		42C1A9D61791637E00BEBF6C /* GCUndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1A9D41791637E00BEBF6C /* GCUndoManager.m */; };
 		42C5670C17FF3831008B0091 /* defaults.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42C5670B17FF3831008B0091 /* defaults.nu */; };
 		42CB5DC417BFEBB900CD274C /* Debugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB5DC317BFEBB900CD274C /* Debugger.m */; };
 		42CCCB5017FC6F590097F771 /* document.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CCCB4F17FC6F590097F771 /* document.nu */; };
 		42CCCB5217FD8C350097F771 /* beautifier.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CCCB5117FD8C350097F771 /* beautifier.nu */; };
-		42CEE82B17EF495F00CC4F95 /* GCUndoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */; };
 		42CEE82C17EF496400CC4F95 /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* Nu.framework */; };
 		42CF88EF17FDE41C0061AF28 /* panel.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CF88EE17FDE41C0061AF28 /* panel.nu */; };
 		42CF88F117FE05310061AF28 /* guide.nu in Resources */ = {isa = PBXBuildFile; fileRef = 42CF88F017FE05310061AF28 /* guide.nu */; };
@@ -123,13 +118,6 @@
 			remoteGlobalIDString = 423601E717919006000E9F49;
 			remoteInfo = Nutor;
 		};
-		42CEE81E17EF460000CC4F95 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 42C1A9AE1791630300BEBF6C;
-			remoteInfo = GCUndoManager;
-		};
 		42CEE82217EF460E00CC4F95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -146,7 +134,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				420B526717F2EA8A00768EEF /* GCUndoManager.framework in CopyFiles */,
 				42A0984F17F2E8010072963B /* Nu.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,12 +299,8 @@
 		42C1A93F179150C000BEBF6C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		42C1A940179150C000BEBF6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42C1A95D179150C100BEBF6C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCUndoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42C1A9B31791630300BEBF6C /* GCUndoManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCUndoManager-Info.plist"; sourceTree = "<group>"; };
-		42C1A9B51791630300BEBF6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		42C1A9B71791630300BEBF6C /* GCUndoManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCUndoManager-Prefix.pch"; sourceTree = "<group>"; };
-		42C1A9D31791637E00BEBF6C /* GCUndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCUndoManager.h; sourceTree = "<group>"; };
-		42C1A9D41791637E00BEBF6C /* GCUndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCUndoManager.m; sourceTree = "<group>"; };
+		42C1A9D31791637E00BEBF6C /* GCUndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCUndoManager.h; path = ../GCUndoManager/GCUndoManager.h; sourceTree = "<group>"; };
+		42C1A9D41791637E00BEBF6C /* GCUndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCUndoManager.m; path = ../GCUndoManager/GCUndoManager.m; sourceTree = "<group>"; };
 		42C5670B17FF3831008B0091 /* defaults.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = defaults.nu; sourceTree = "<group>"; };
 		42CB5DC217BFEBB900CD274C /* Debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Debugger.h; path = editor/Debugger.h; sourceTree = SOURCE_ROOT; };
 		42CB5DC317BFEBB900CD274C /* Debugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Debugger.m; path = editor/Debugger.m; sourceTree = SOURCE_ROOT; };
@@ -336,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42CEE82C17EF496400CC4F95 /* Nu.framework in Frameworks */,
-				42CEE82B17EF495F00CC4F95 /* GCUndoManager.framework in Frameworks */,
 				423601E917919006000E9F49 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,14 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4298387317F592F600D735C8 /* Nu.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42C1A9AB1791630300BEBF6C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42C1A9B01791630300BEBF6C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +346,6 @@
 			isa = PBXGroup;
 			children = (
 				8DC2EF5B0486A6940098B216 /* Nu.framework */,
-				42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */,
 				423601E817919006000E9F49 /* Nutor.app */,
 				4298386217F592BB00D735C8 /* nush */,
 			);
@@ -583,13 +556,14 @@
 		423601EA17919006000E9F49 /* Nutor */ = {
 			isa = PBXGroup;
 			children = (
-				42C1A9B11791630300BEBF6C /* GCUndoManager */,
 				4236021E1791913C000E9F49 /* App.h */,
 				4236021F1791913C000E9F49 /* App.m */,
 				423602181791913C000E9F49 /* Document.h */,
 				423602191791913C000E9F49 /* Document.m */,
 				4236021C1791913C000E9F49 /* Editor.h */,
 				4236021D1791913C000E9F49 /* Editor.m */,
+				42C1A9D31791637E00BEBF6C /* GCUndoManager.h */,
+				42C1A9D41791637E00BEBF6C /* GCUndoManager.m */,
 				423602201791913C000E9F49 /* Parser.h */,
 				423602211791913C000E9F49 /* Parser.m */,
 				42CB5DC217BFEBB900CD274C /* Debugger.h */,
@@ -686,38 +660,9 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		42C1A9B11791630300BEBF6C /* GCUndoManager */ = {
-			isa = PBXGroup;
-			children = (
-				42C1A9D31791637E00BEBF6C /* GCUndoManager.h */,
-				42C1A9D41791637E00BEBF6C /* GCUndoManager.m */,
-				42C1A9B21791630300BEBF6C /* Supporting Files */,
-			);
-			name = GCUndoManager;
-			path = ../GCUndoManager;
-			sourceTree = "<group>";
-		};
-		42C1A9B21791630300BEBF6C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				42C1A9B31791630300BEBF6C /* GCUndoManager-Info.plist */,
-				42C1A9B41791630300BEBF6C /* InfoPlist.strings */,
-				42C1A9B71791630300BEBF6C /* GCUndoManager-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		42C1A9AC1791630300BEBF6C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42C1A9D51791637E00BEBF6C /* GCUndoManager.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8DC2EF500486A6940098B216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -741,7 +686,6 @@
 			);
 			dependencies = (
 				42CEE82317EF460E00CC4F95 /* PBXTargetDependency */,
-				42CEE81F17EF460000CC4F95 /* PBXTargetDependency */,
 			);
 			name = Nutor;
 			productName = editor;
@@ -766,24 +710,6 @@
 			productName = nush;
 			productReference = 4298386217F592BB00D735C8 /* nush */;
 			productType = "com.apple.product-type.tool";
-		};
-		42C1A9AE1791630300BEBF6C /* GCUndoManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 42C1A9CD1791630300BEBF6C /* Build configuration list for PBXNativeTarget "GCUndoManager" */;
-			buildPhases = (
-				42C1A9AA1791630300BEBF6C /* Sources */,
-				42C1A9AB1791630300BEBF6C /* Frameworks */,
-				42C1A9AC1791630300BEBF6C /* Headers */,
-				42C1A9AD1791630300BEBF6C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GCUndoManager;
-			productName = GCUndoManager;
-			productReference = 42C1A9AF1791630300BEBF6C /* GCUndoManager.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		8DC2EF4F0486A6940098B216 /* Nu */ = {
 			isa = PBXNativeTarget;
@@ -830,7 +756,6 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* Nu */,
-				42C1A9AE1791630300BEBF6C /* GCUndoManager */,
 				423601E717919006000E9F49 /* Nutor */,
 				4298386117F592BB00D735C8 /* nush */,
 			);
@@ -904,14 +829,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42C1A9AD1791630300BEBF6C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42C1A9B61791630300BEBF6C /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8DC2EF520486A6940098B216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -951,6 +868,7 @@
 				423601F117919006000E9F49 /* main.m in Sources */,
 				42CB5DC417BFEBB900CD274C /* Debugger.m in Sources */,
 				423602251791913C000E9F49 /* Editor.m in Sources */,
+				425312B218258415006670D3 /* GCUndoManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,14 +879,6 @@
 				4298387517F5941100D735C8 /* Debugger.m in Sources */,
 				4298387417F593CB00D735C8 /* Parser.m in Sources */,
 				4298386717F592BB00D735C8 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		42C1A9AA1791630300BEBF6C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42C1A9D61791637E00BEBF6C /* GCUndoManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,11 +902,6 @@
 			isa = PBXTargetDependency;
 			target = 423601E717919006000E9F49 /* Nutor */;
 			targetProxy = 4298387117F592EC00D735C8 /* PBXContainerItemProxy */;
-		};
-		42CEE81F17EF460000CC4F95 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 42C1A9AE1791630300BEBF6C /* GCUndoManager */;
-			targetProxy = 42CEE81E17EF460000CC4F95 /* PBXContainerItemProxy */;
 		};
 		42CEE82317EF460E00CC4F95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1028,14 +933,6 @@
 				423601F417919006000E9F49 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		42C1A9B41791630300BEBF6C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42C1A9B51791630300BEBF6C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1311,88 +1208,6 @@
 			};
 			name = Release;
 		};
-		42C1A9CE1791630300BEBF6C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GCUndoManager/GCUndoManager-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "GCUndoManager/GCUndoManager-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Debug;
-		};
-		42C1A9CF1791630300BEBF6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_VERSION = A;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GCUndoManager/GCUndoManager-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "GCUndoManager/GCUndoManager-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1428,15 +1243,6 @@
 			buildConfigurations = (
 				4298386D17F592BB00D735C8 /* Debug */,
 				4298386E17F592BB00D735C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42C1A9CD1791630300BEBF6C /* Build configuration list for PBXNativeTarget "GCUndoManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				42C1A9CE1791630300BEBF6C /* Debug */,
-				42C1A9CF1791630300BEBF6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
