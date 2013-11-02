@@ -37,11 +37,11 @@
          ;; to allow result updates this is necessary:
          (NuDebugging setState: YES)
          ;; the time value does not make any sense for me:
-         time -? => '<invalid Result>
+         time -? => 6.953222975435954e-310
          ;; therefore I used $count just as addChild: simple counter
-         $count -? => '<invalid Result>
+         $count -? => 3759
          (node1 set:  (position:?(list (+ 312 (* 203 (cos (/ $count 24))))
-                                       (+ 302 (* 200 (sin (/ $count 17))))) => '<invalid Result>
+                                       (+ 302 (* 200 (sin (/ $count 17))))) => (list 494.3797453928265 488.8507957125559)
                           scale: (+ 2.5
                                     (* 0.2 (cos (/ $count 13.5))))
                       zRotation: (/ $count 22)
@@ -50,8 +50,8 @@
                            text:"Heiko"))
          
          (node2 set:  (position:?(list (+ 218 (* 200 (sin (/ $count 100))))
-                                       (+ 300 (* 200 (cos (/ $count 100))))) => '<invalid Result>
-                          scale: ?(+ 2.1 (* 0.50 (sin (/ $count 18)))) => '<invalid Result>
+                                       (+ 300 (* 200 (cos (/ $count 100))))) => (list 196.2209062667233 498.8106412548311)
+                          scale: ?(+ 2.5 (* 0.50 (sin (/ $count 18)))) => 2.998296181641361
                       zRotation:  (/ $count -14.1 )
                           color: (NSColor colorWithCalibratedRed: 0 green: 0.1754863194084133 blue: 1 alpha: 1)
                colorBlendFactor:1
@@ -65,7 +65,7 @@
                colorBlendFactor:1
                            text:"Luisa & Lena"))
          
-         ?(set $count (+ $count 1)) => '<invalid Result>
+         ?(set $count (+ $count 1)) => 3760
          ;; delete the ~ ifn the following expression and see what happens. (performance sucks!!!)
          ~((editor).sourceStorage processResults)
          ;; alternatively you could press the update button in the toolbar (now you know what it is for ...)    
@@ -79,7 +79,7 @@
       $playground-window)
 
 (if ?(and (defined scene)
-          scene) => '<invalid Result>
+          scene) => <NSNull:7fff72bf51f0>
     (then (scene removeAllChildren)
           (scene.view presentScene: nil)))
 (set scene (Scene alloc <- initWithSize:'(600 600)))

@@ -383,12 +383,8 @@
 			isa = PBXGroup;
 			children = (
 				423601EA17919006000E9F49 /* Nutor */,
-				22B3B41C13B0359300B3AB31 /* objc */,
 				22B3B3E413B033EE00B3AB31 /* nu */,
-				225F62B913B04256002DD16B /* libffi */,
-				42C1A9B11791630300BEBF6C /* GCUndoManager */,
 				22B3B50B13B03CF400B3AB31 /* Targets */,
-				4298386517F592BB00D735C8 /* nush */,
 				42C1A93A179150C000BEBF6C /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				425312AE182400F8006670D3 /* readme etc. */,
@@ -540,8 +536,9 @@
 		22B3B3E413B033EE00B3AB31 /* nu */ = {
 			isa = PBXGroup;
 			children = (
+				22B3B41C13B0359300B3AB31 /* objc */,
 				22B3B38713B033D400B3AB31 /* test */,
-				22B3B3E513B033EE00B3AB31 /* old beautify.nu */,
+				4298386517F592BB00D735C8 /* nush */,
 				22B3B3E613B033EE00B3AB31 /* bridgesupport.nu */,
 				22B3B3E713B033EE00B3AB31 /* cblocks.nu */,
 				22B3B3E813B033EE00B3AB31 /* cocoa.nu */,
@@ -558,6 +555,7 @@
 				22B3B3F313B033EE00B3AB31 /* nu.nu */,
 				22B3B3F413B033EE00B3AB31 /* template.nu */,
 				22B3B3F513B033EE00B3AB31 /* test.nu */,
+				22B3B3E513B033EE00B3AB31 /* old beautify.nu */,
 			);
 			name = nu;
 			path = ../nu;
@@ -566,6 +564,7 @@
 		22B3B41C13B0359300B3AB31 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				225F62B913B04256002DD16B /* libffi */,
 				229FABE113C0129400CEFCF5 /* Nu.h */,
 				22B3B41D13B0359300B3AB31 /* Nu.m */,
 			);
@@ -584,6 +583,7 @@
 		423601EA17919006000E9F49 /* Nutor */ = {
 			isa = PBXGroup;
 			children = (
+				42C1A9B11791630300BEBF6C /* GCUndoManager */,
 				4236021E1791913C000E9F49 /* App.h */,
 				4236021F1791913C000E9F49 /* App.m */,
 				423602181791913C000E9F49 /* Document.h */,
@@ -653,7 +653,8 @@
 				4298386617F592BB00D735C8 /* main.m */,
 				4298386817F592BB00D735C8 /* Supporting Files */,
 			);
-			path = nush;
+			name = nush;
+			path = ../Xcode/nush;
 			sourceTree = "<group>";
 		};
 		4298386817F592BB00D735C8 /* Supporting Files */ = {
@@ -692,7 +693,8 @@
 				42C1A9D41791637E00BEBF6C /* GCUndoManager.m */,
 				42C1A9B21791630300BEBF6C /* Supporting Files */,
 			);
-			path = GCUndoManager;
+			name = GCUndoManager;
+			path = ../GCUndoManager;
 			sourceTree = "<group>";
 		};
 		42C1A9B21791630300BEBF6C /* Supporting Files */ = {
