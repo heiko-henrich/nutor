@@ -83,5 +83,5 @@
  (- directory is self.fileURL. URLByDeletingLastPathComponent)
  
  (- loadFromHere: filename is
-    (Document load: (self.directory URLByAppendingPathComponent: filename))))
+    (NutorDocument load: (self.directory URLByAppendingPathComponent: filename))))
 
