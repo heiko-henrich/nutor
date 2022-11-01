@@ -10854,9 +10854,12 @@ static NuProfiler *defaultProfiler = nil;
 static void nu_swizzleContainerClasses()
 {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    Class NSCFDictionary = NSClassFromString(@"NSCFDictionary");
-    Class NSCFArray = NSClassFromString(@"NSCFArray");
-    Class NSCFSet = NSClassFromString(@"NSCFSet");
+//    Class NSCFDictionary = NSClassFromString(@"NSCFDictionary");
+//    Class NSCFArray = NSClassFromString(@"NSCFArray");
+//    Class NSCFSet = NSClassFromString(@"NSCFSet");
+    Class NSCFDictionary = NSMutableDictionary.alloc.init.class;
+    Class NSCFArray = NSMutableArray.alloc.init.class;
+    Class NSCFSet = NSMutableSet.alloc.init.class;
     [NSCFDictionary include:[NuClass classWithName:@"NSCFDictionarySwizzles"]];
     [NSCFArray include:[NuClass classWithName:@"NSCFArraySwizzles"]];
     [NSCFSet include:[NuClass classWithName:@"NSCFSetSwizzles"]];
@@ -10867,6 +10870,7 @@ static void nu_swizzleContainerClasses()
     [NSCFSet exchangeInstanceMethod:@selector(addObject:) withMethod:@selector(nuAddObject:)];
     [pool drain];
 }
+
 
 #pragma mark - NuSymbol.m
 
